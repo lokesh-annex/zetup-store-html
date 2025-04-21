@@ -17,6 +17,10 @@ html::-webkit-scrollbar-corner {
 body {
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
+    background-color: #fff;
+    background-image: url(../images/body-bg.svg);
+    background-position: 0 0;
+    background-size: auto;
 }
 :root {
     --primary-color: #0B5563;
@@ -430,6 +434,62 @@ h3 span {
     background: var(--primary-color);
 }
 /* end */
+
+
+/* why-choose-section */
+.why-choose-section{
+    padding: 4.7vw;
+}
+.why-choose-section .heading-line{
+    margin: 0px;
+}
+.why-choose-section .heading-sec-container{
+    margin-bottom: 4rem;
+}
+.why-choose-section .card.card-features {
+    border-radius: 50px;
+    padding: 30px;
+    border: 0px;
+    min-height: 580px;
+}
+.why-choose-section .card.card-features img{
+    height: 260px;
+    object-fit: contain;
+}
+.why-choose-section .card.card-features h4{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 2rem;
+    line-height: 40px;
+    }
+.why-choose-section .card.card-features p{
+font-size: 16px;
+}
+.why-choose-section .card-bg-1{
+    background: #014051;
+}
+.why-choose-section .card-bg-2{
+    background: #8da0fd;
+}
+.why-choose-section .card-bg-3{
+    background: #d1e6d1;
+}
+.why-choose-section .card-bg-4{
+    background: #863a29;
+}
+.why-choose-section .card-bg-1 h4, .why-choose-section .card-bg-1 p{
+    color: #fff;
+}
+.why-choose-section .card-bg-4 h4, .why-choose-section .card-bg-4 p{
+    color: #fff;
+}
+
+
+
+
+
+/* end */
+
 /* slider */
 .slider-section {
     padding: 19rem 0px 18rem;
@@ -1032,7 +1092,7 @@ h3 span {
 /* end */
 /* join us */
 .join-us {
-    background: #0b163f;
+    background: #000000;
 }
 .row-pattern {
     position: absolute;
@@ -1303,6 +1363,7 @@ h3 span {
 .package__body .package__features {
     max-width: 220px;
     margin: 0 auto;
+    text-align: left;
 }
 .package__features ul li:first-child {
     padding-top: 0;
@@ -1918,6 +1979,9 @@ section.live-demo.pad-90 {
     }
 }
 /* header ani */
+
+
+
 /* Price Ani */
 .banter-loader {
     position: absolute;
@@ -2304,6 +2368,123 @@ section.live-demo.pad-90 {
     animation: moveBox-9 20s infinite;
 }
 /* Price and */
+
+
+/* Price New Design */
+
+.pricing-table-section{
+    padding: 4.7vw;
+}
+.pricing-table-section .heading-line {
+    margin: 0px;
+}
+.pricing-table {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    margin: 40px 0;
+  }
+  .pricing-table .row{
+    margin: 0px;
+  }
+  .pricing-table .row .col{
+    border-right: 1px solid #f3f3f3;
+  }
+  .pricing-header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  .pricing-header .col {
+    padding: 32px 8px 16px 8px;
+    text-align: center;
+    position: relative;
+  }
+  .recommended-badge {
+    background: #eaffd7;
+    color: #4caf50;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 2px 22px;
+    border-radius: 6px;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .plan-title {
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+  .plan-price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .plan-period {
+    font-size: 1rem;
+    color: #888;
+  }
+  .feature-section-title {
+    background: #fafbfb;
+    font-weight: 600;
+    font-size: 1.05rem;
+    /* border-top: 1px solid #eee; */
+    border-bottom: 1px solid #eee;
+  }
+  .feature-section-title .col{
+    padding: 16px 10px;
+
+  }
+  .feature-row {
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 1rem;
+    vertical-align: middle;
+    min-height: 48px;
+    line-height: 48px;
+  }
+  .feature-label {
+    font-weight: 400;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .feature-row:last-child {
+    border-bottom: none;
+  }
+  .info-icon {
+    color: #bdbdbd;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 3px;
+  }
+  .table-responsive {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  @media (max-width: 991px) {
+    .plan-title, .plan-price {
+      font-size: 1rem;
+    }
+    .feature-label {
+      font-size: 0.97rem;
+    }
+    .pricing-header .col {
+      padding: 24px 2px 10px 2px;
+    }
+  }
+  @media (max-width: 767px) {
+    .pricing-header, .feature-section-title, .feature-row {
+      font-size: 0.93rem;
+    }
+    .plan-price {
+      font-size: 1.3rem;
+    }
+  }
+/* Price end */
 /* Contct us page ani */
 .ball {
     position: relative;
@@ -2424,7 +2605,7 @@ section.live-demo.pad-90 {
 }
 .how-to-work-box h3 {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 20px;
 }
 .how-to-work-box p {
