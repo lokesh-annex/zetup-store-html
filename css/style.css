@@ -461,6 +461,7 @@ h3 span {
     font-size: 28px;
     font-weight: 400;
     margin-top: 2rem;
+    padding-right: 40px;
     line-height: 40px;
     }
 .why-choose-section .card.card-features p{
@@ -2555,7 +2556,7 @@ section.live-demo.pad-90 {
 }
 /* End */
 .slider-text {
-    max-width: 1000px;
+    max-width:900px;
     margin: auto;
     text-align: center;
 }
