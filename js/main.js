@@ -59,4 +59,38 @@
             $('.animated-svg').addClass('animate');
         }
     });
+    gsap.registerPlugin(ScrollTrigger);
+
+  // Start all cards centered
+  gsap.set(".testimonials_card-main", {
+    x: 0,
+    opacity: 1,
+    position: "relative",
+    zIndex: 1
+  });
+
+  // Move LEFT card to the left on scroll
+  gsap.to(".testimonials_card-main.first", {
+    x: "-60px",
+    scrollTrigger: {
+      trigger: ".testimonials-global",
+      start: "top center",
+      
+      scrub: 1
+    }
+  });
+
+  // CENTER card (can stay as-is or add effects)
+  // Optional: fade in or scale if desired
+
+  // Move RIGHT card to the right on scroll
+  gsap.to(".testimonials_card-main.third", {
+    x: "60px",
+    scrollTrigger: {
+      trigger: ".testimonials-global",
+      start: "top center",
+     
+      scrub: 1
+    }
+  });
  });
