@@ -2792,7 +2792,7 @@ section.live-demo.pad-90 {
     padding-top: 4rem;
 }
 .section_cta-bg {
-    background-color: rgb(91 91 214);
+    background-color:var(--primary-color);
     border-radius: 1.25rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -2807,8 +2807,8 @@ section.live-demo.pad-90 {
     background-repeat: repeat;
     position: absolute;
     inset: 0%;
-    -webkit-mask: linear-gradient(#5753c6 0%, #5151cd00 50%);
-    mask: linear-gradient(#5753c6 0%, #5151cd00 50%);
+    -webkit-mask: linear-gradient(#0b5563 0%, #5151cd00 50%);
+    mask: linear-gradient(#0b5563 0%, #5151cd00 50%);
 }
 
 .z-index-2 {
