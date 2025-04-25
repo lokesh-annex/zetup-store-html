@@ -6,7 +6,7 @@ html::-webkit-scrollbar {
     border-radius: 10px;
 }
 html::-webkit-scrollbar-thumb {
-    background: #3b64c4;
+    background: var(--primary-color);
     -webkit-border-radius: 0;
     border-radius: 10px;
 }
@@ -42,6 +42,9 @@ p {
     font-family: "Proxima-Nova-Font";
     opacity: 0.88;
     font-size: 18px;
+}
+.pt-0{
+    padding-top: 0px !important;
 }
 h1 {
     font-size: 50px;
@@ -445,6 +448,9 @@ h3 span {
 }
 .why-choose-section .heading-sec-container{
     margin-bottom: 4rem;
+    /* padding: 40px;
+    background: #f9f6f4;
+    border-radius: 20px; */
 }
 .why-choose-section .card.card-features {
     border-radius: 50px;
@@ -986,6 +992,8 @@ border-top-right-radius: 50px;
     background-size: cover;
 }
 /* end */
+
+
 /* features */
 .e-card {
     background: white;
@@ -1045,6 +1053,34 @@ border-top-right-radius: 50px;
     border-radius: 40%;
     animation: wave 90s infinite linear;
 }
+
+/* video section */
+
+.features-main-inner .video-container {
+    position: relative;
+    width: 100vw;
+    height: 82vh;
+    overflow: hidden;  
+}
+  
+  .features-main-inner #myVideo {
+    transform: translate(26%, 0%);
+    object-fit: cover;
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    width: 54vw;
+    height: 82vh;
+    display: block;
+  }
+  
+video.fullscreen::-webkit-media-controls {
+    display: none !important;
+  }
+  
+
+
 /* .playing .wave:nth-child(2) {
   animation-duration: 15s;
 } */
@@ -1485,8 +1521,11 @@ border-top-right-radius: 50px;
 }
 .features-list-inner .img {
     position: relative;
+}
+.features-list-inner .img.main-img3, .features-list-inner .img.main-img1 {
     text-align: right;
 }
+
 .features-list-inner .img.main-img1 img.sm-circle {
     right: -50px;
     top: 20%;
@@ -1539,7 +1578,7 @@ border-top-right-radius: 50px;
     position: absolute;
 }
 .img.main-img2 img:nth-of-type(1) {
-    right: 0;
+    left: 0;
     top: 0;
     z-index: 1;
     -webkit-animation: rotate-center 70s linear infinite both;
@@ -2844,9 +2883,9 @@ section.live-demo.pad-90 {
 }
 
 .text-color-alternate-3 {
-    color: #dadcff;
+    color: #cfcfcf;
+    font-weight: 300;
 }
-
 .cta_cta-wrapper {
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
