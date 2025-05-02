@@ -442,6 +442,7 @@ h3 span {
 /* why-choose-section */
 .why-choose-section{
     padding: 4.7vw;
+    overflow: hidden;
 }
 .why-choose-section .heading-line{
     margin: 0px;
@@ -536,6 +537,7 @@ border-top-right-radius: 50px;
 }
 .glass-box img {
     width: 350px;
+    opacity: 0.3;
 }
 .image-top,
 .image-bottom {
@@ -548,13 +550,13 @@ border-top-right-radius: 50px;
 }
 .image-bottom img {
     max-width: 100%;
-    width: 750px;
+    width: 570px;
 }
 .image-top img {
-    width: 440px;
+    width: 360px;
 }
 .image-bottom {
-    left: -200px;
+    left: -100px;
     top: 550px;
 }
 .line {
@@ -595,8 +597,8 @@ border-top-right-radius: 50px;
 }
 .dot-icon-2 {
     position: absolute;
-    right: 289px;
-    bottom: 100px;
+    right: 250px;
+    bottom: 120px;
     width: auto;
 }
 .dot-icon-2 img {
@@ -1174,9 +1176,17 @@ video.fullscreen::-webkit-media-controls {
     padding-right: 60px;
     font-size: 16px;
 }
+.footer .footer-social{
+display: flex;
+gap: 15px;
+}
+.footer .footer-social svg{
+width: 32px;
+}
 .contact-icon {
     width: 36px;
     height: 36px;
+    flex: none;
     background: var(--primary-color);
     border-radius: 100%;
     display: flex;
@@ -1470,7 +1480,7 @@ video.fullscreen::-webkit-media-controls {
     opacity: 8%;
 }
 .features-list-inner p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2;
 }
 .list-icon {
@@ -1919,11 +1929,11 @@ section.live-demo.pad-90 {
         radial-gradient(8% 8% at 27% 23%, hsl(0, 0%, 100%) 45%, hsla(0, 0%, 100%, 0) 50%),
         radial-gradient(8% 8% at 28% 22%, hsl(0, 0%, 100%) 45%, hsla(0, 0%, 100%, 0) 50%);
     box-shadow: 0 -0.06em 0.1em hsl(0, 90%, 100%) inset,
-        0 -0.15em 0.4em #3b64c4 inset,
-        0 0.05em 0.05em #3b64c4 inset,
+        0 -0.15em 0.4em #0b5563 inset,
+        0 0.05em 0.05em #0b5563 inset,
         0.05em 0 0.1em hsl(0, 90%, 100%) inset,
         -0.05em 0 0.1em hsl(0, 90%, 100%) inset,
-        0 0.1em 0.4em #3b64c4 inset;
+        0 0.1em 0.4em #0b5563 inset;
     cursor: pointer;
     position: relative;
     width: 3em;
@@ -2747,7 +2757,7 @@ section.live-demo.pad-90 {
   
 }
 .testimonials-global{
-    background-image: linear-gradient(180deg, #ffffff, #dfe9fb);
+    /* background-image: linear-gradient(180deg, #ffffff, #dfe9fb); */
     border: 1px solid #e3e0e0;
     padding: 8rem 0px;
 }

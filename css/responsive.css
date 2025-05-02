@@ -1,5 +1,14 @@
-@media (max-width:1400px) {
-
+@media (max-width:1600px) {
+    .pad-90{
+        padding: 3rem 0rem;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 54px;
+    }
+    p {
+        font-size: 16px;
+    }
     .navbar {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -11,6 +20,274 @@
         right: 0%;
     }
     
+    /* banner  */
+    .glass-box img{
+        opacity: 0.5;
+    }
+    .image-top img, .dot-icon img {
+        width: 240px;
+    }
+    .slider-text {
+        max-width: 100%;
+    }
+    .slider-text svg{
+        width: 100px;
+    }
+    .dot-icon {
+        position: absolute;
+        top: 120px;
+        left: 50px;
+    }
+    .glass-box{
+        top: 0px;
+    }
+    .top-star {
+        left: 260px;
+        top: 170px;
+    }
+    .slider-section{
+        padding: 9rem 0px 9rem;
+    }
+    .top-star img, .bottom-star img {
+        width: 70px;
+    }
+    .slider-text h1 {
+        font-size: 48px;
+        line-height: 72px;
+    }
+    .slider-text h1 .sub-text {
+        font-size: 38px;
+    }
+    .slider-section p {
+        font-size: 18px;
+        margin-top: 22px;
+        margin-bottom: 23px;
+        max-width: 60%;
+        margin: 30px auto;
+    }
+    .image-bottom {
+        left: -80px;
+        bottom: 40px;
+        right: auto;
+        top: auto;
+    }
+    .image-bottom img{
+        width: 350px;
+    }
+    .dot-icon-2 {
+        right: 128px;
+        bottom: 40px;
+    }
+    .dot-icon-2 img {
+        width: 150px;
+    }
+
+    /* Launch Your eCommerce Storse */
+    .how-to-work-sec img{
+        max-width: 70%;
+    }
+    .bg-bottom-se{
+        left: -150px;
+    }
+    .bg-right-se{
+        right: -130px;
+    }
+
+
+    /* ZetupStore Features */
+                            
+    .features-main-inner .video-container, .features-main-inner #myVideo{
+        height: 100vh;
+    }
+    .img.main-img2 img:nth-of-type(1) {
+        left: 0px;
+        width: 100%;
+    }
+    .img.main-img2 .img-body{
+        width: 100%;
+
+    }
+    .features-main-inner.mb-150, .features-main-inner.mb-50{
+        margin-bottom: 80px;
+    }
+.why-choose-section{
+    padding:0vw  4.7vw;
+}
+
+/* Why Choose ZetupStore?  */
+
+.why-choose-section .card.card-features {
+    border-radius: 30px;
+    padding: 20px;
+    min-height: 540px;
+}
+.why-choose-section .card.card-features img {
+    height: 200px;
+}
+.why-choose-section .card.card-features h4 {
+    font-size: 22px;
+    margin-top: 1.5rem;
+    padding-right: 0px;
+    line-height: 30px;
+}
+.why-choose-section .card.card-features{
+    min-height: 450px;
+}
+.why-choose-section .card.card-features.last-card .last-card-text{
+    padding: 20px;
+}
+.why-choose-section.section-second{
+    padding-bottom: 3rem;
+}
+.testimonials-global{
+    padding: 4rem 0px;
+    overflow: hidden;
+}
+.footer-link a{
+    font-size: 14px;
+}
+.footer-logo img {
+    max-width: 140px;
+}
+.footer .footer-social svg {
+    width: 24px;
+}
+.contact-icon{
+    width: 30px;
+    height: 30px;
+}
+
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    h2 {
+        font-size: 26px;
+        line-height: 36px;
+    }      
+    /* .heading-sec-container{
+        max-width: 90%;
+    }   */
+/* Header sec */
+    .dot-icon-2, .dot-icon{
+ display: none;   
+}
+.top-star {
+    left: 60px;
+}
+.slider-section {
+    padding: 5rem 0px 5rem;
+}
+.slider-section p {
+    font-size: 16px;
+    margin: 20px 0px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+/* Hero Sec */
+.slider-section {
+    overflow: hidden;
+}
+.slider-text h1 {
+    font-size: 36px;
+    line-height: 42px;
+}
+.slider-text h1 .sub-text {
+    font-size: 28px;
+}
+.image-top {
+    right: -50px;
+    top: 80px;
+}
+.image-top img, .dot-icon img {
+    width: 130px;
+}
+.image-bottom {
+    left: -40px;
+}
+.image-bottom img {
+    width: 200px;
+}
+.slide-btn .btn{
+    height: 46px;
+    font-size: 16px;
+    padding: 0 44px;
+    line-height: 46px;
+}
+/* end */
+/* Launch Your eCommerce Storse */
+.how-to-work-box{
+    padding: 20px;
+    min-height: 490px;
+    margin-top: 20px;
+}
+.how-to-work-box h3 {
+    font-size: 24px;
+}
+.how-to-work-box p{
+    max-width: 100%;
+}
+.how-to-work-sec img{
+    max-width: 100%;
+}
+.bg-bottom-se {
+    left: 0px;
+}
+.bg-right-se {
+    right: 0px;
+}
+.how-to-work-box.last-box{
+    justify-content: start;
+}
+.how-to-work-box.last-box p{
+    text-align: center;
+}
+.launch-store .btn{
+    font-size: 16px;
+}
+
+/* ZetupStore Features */
+.features-main-inner .video-container, .features-main-inner #myVideo {
+    height: 50vh;
+    transform: translate(0%, 0%);
+    border-radius:20px;
+}
+.features-main-inner .row {
+    gap: 20px;
+}
+.features-main-inner .video-container {
+    width: 90vw;
+}
+.features-main-inner #myVideo {
+    width: 90vw;
+}
+.why-choose-section.section-second p{
+    margin-top: 15px;
+}
+.img.main-img2 img:nth-of-type(1){
+    width: 80%;
+}
+.img.main-img2 .img-body {
+    width: 86%;
+}
+/* Why Choose ZetupStore?  */
+.why-choose-section .card-bg-3, .why-choose-section .card-bg-4 {
+    margin-top: 20px;
+}
+/* Get Started Free - Upgrade Anytime */
+.section_cta .heading-style-h2 {
+    font-size: 26px;
+}
+.section_cta-bg{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+/* Footer */
+
+.contact-sec{
+    margin-bottom: 20px;
+}
 
 }
 @media (max-width:767px) {
@@ -70,15 +347,9 @@
         text-align: center !important;
     }
 
-    .slider-section p {
-        font-size: 18px;
-        margin-top: 22px;
-        margin-bottom: 23px;
-    }
-
+   
     .support-section {
         margin-top: 37px;
-
     }
     
     .support-icon {
@@ -268,7 +539,7 @@
         padding-bottom: 0.8rem;
     }
     .pad-90 {
-        padding: 30px 0px;
+        padding: 30px 10px;
     }
     .e-card{
         height: 240px;
@@ -331,12 +602,15 @@
     .features-list-inner .img img{
         width: 100%;
     }
-    .features-main-inner{
-        margin-bottom: 20px;
+    .features-main-inner.mb-150, .features-main-inner.mb-50 {
+        margin-bottom: 40px;
     }
     .section-head h2{
-        margin-top: 3rem;
+        margin-top: 1rem;
         font-size: 22px;
+    }
+    .features-list-inner p{
+        line-height: 1.6;
     }
 
     /* Contact Us page     */
@@ -376,6 +650,211 @@
         width: 10px;
         height: 10px;
     }
+
+    /* New Css */
+
+    h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }   
+    /* p{
+        font-size: 14px !important;
+    }    */
+    /* .heading-sec-container{
+        max-width: 90%;
+    }   */
+    .heading-sec-container{
+        text-align: center;
+    }
+    .heading-line{
+        margin: 0px auto !important;
+    }
+/* Header sec */
+.slider-text svg {
+    width: 50px;
+}
+.bubble{
+    width: 2em;
+    height: 2em;
+}
+.top-star{
+    display: none;
+}
+    .dot-icon-2, .dot-icon{
+ display: none;   
+}
+.top-star {
+    left: 60px;
+}
+.slider-section {
+    padding: 3rem 0px 5rem;
+}
+.slider-section p {
+    max-width: 90%;
+    margin: 20px auto;
+    margin-bottom: 25px;
+}
+
+/* Hero Sec */
+.slider-section {
+    overflow: hidden;
+}
+.slider-text h1 {
+    font-size: 42px;
+    line-height: 46px;
+    font-weight: 500;
+    margin: 0 auto;
+}
+.slider-text h1 .sub-text {
+    font-size: 22px;
+    margin-top: 10px;
+}
+.image-top {
+    right: -60px;
+    top: 80px;
+    display: none;
+}
+.image-top img, .dot-icon img {
+    width: 110px;
+}
+.image-bottom {
+    left: -160px;
+    display: none;
+}
+.image-bottom img {
+    width: 130px;
+}
+.slide-btn .btn{
+    height: 46px;
+    font-size: 14px;
+    padding: 0 44px;
+    line-height: 46px;
+}
+/* end */
+.bg-bottom-se, .bg-right-se, .bg-bottom-last {
+    transform: scale(1.2);
+}
+.bg-right-se {
+    right: -50px;
+    bottom: -30px;
+}
+.bg-bottom-last {
+    bottom: -10px;
+    margin-top: 20px;
+}
+
+/* Launch Your eCommerce Storse */
+.heading-sec-container p{
+    padding: 10px 10px;
+    padding-bottom: 0px;
+    margin-top: 15px;
+}
+.how-to-work-box{
+    padding: 20px;
+    min-height: auto;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+.how-to-work-box h3 {
+    font-size: 22px;
+}
+.bg-bottom-se{
+    bottom: -30px;
+}
+.how-to-work-box p{
+    max-width: 100%;
+}
+.how-to-work-sec img{
+    max-width: 100%;
+}
+.bg-bottom-se {
+    left: 0px;
+}
+.bg-right-se {
+    right: 0px;
+}
+.how-to-work-box.last-box{
+    justify-content: start;
+}
+.how-to-work-box.last-box p{
+    text-align: center;
+}
+.launch-store .btn {
+    font-size: 14px;
+    padding: 0 26px;
+}
+.launch-store{
+    margin-top: 30px;
+}
+/* ZetupStore Features */
+.why-choose-section{
+    padding: 0vw 10px;
+}
+.features-main-inner .video-container, .features-main-inner #myVideo {
+    height: 37vh;
+    transform: translate(0%, 0%);
+    border-radius: 10px;
+}
+.why-choose-section .heading-sec-container{
+    margin-bottom: 2rem;
+}
+.features-main-inner .row {
+    gap: 10px;
+}
+.features-main-inner .video-container {
+    width: 100%;
+}
+.features-main-inner #myVideo {
+    width: 100%;
+}
+.why-choose-section.section-second p{
+    margin-top: 15px;
+    padding: 10px 0px;
+}
+.img.main-img2 img:nth-of-type(1){
+    width: 100%;
+}
+.img.main-img2 .img-body {
+    width: 100%;
+}
+section.features-list-inner.pad-90.pt-0 {
+    padding-bottom: 0px;
+}
+/* Why Choose ZetupStore?  */
+.why-choose-section .card-bg-3, .why-choose-section .card-bg-4 {
+    margin-top: 20px;
+}
+.why-choose-section.section-second{
+    padding-top: 1.5rem;
+    border-top: 1px solid #eeee;
+}
+
+/* Get Started Free - Upgrade Anytime */
+.section_cta .heading-style-h2 {
+    font-size: 26px;
+}
+.why-choose-section .card.card-features {
+    min-height: auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.section_cta-bg{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+/* testimonials global */
+.testimonials-global {
+    padding: 30px 0px;
+}
+
+
+/* Footer */
+
+.contact-sec{
+    margin-bottom: 20px;
+}
+
 
 
 }
