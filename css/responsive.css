@@ -1076,6 +1076,19 @@ line-height: 32px;
 .call-action-img {
     padding: 15px 0px;
 }
+.customer-support video {
+    width: 80%;
+}
+.btn-whatsapp-pulse {
+    bottom: 100px;
+    right: 20px;
+}
+.btn-whatsapp-pulse{
+    padding: 28px;
+}
+.btn-whatsapp-pulse img {
+    width: 25px;
+}
 /* .enquiry-form .btn.enquiry-btn{
     bottom: 200px;
         right: 80px;
