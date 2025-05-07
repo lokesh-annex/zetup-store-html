@@ -861,6 +861,10 @@
         margin: 0px auto !important;
     }
 /* Header sec */
+
+h1.secondary-color span {
+    display: block;
+}
 .slider-text svg {
     width: 50px;
 }
