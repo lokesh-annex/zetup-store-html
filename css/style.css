@@ -714,6 +714,7 @@ border-top-right-radius: 50px;
     position: relative;
     z-index: 99;
     margin: auto;
+text-align: center;
 }
 /* end */
 .bg-sec {
@@ -1481,9 +1482,9 @@ video.fullscreen::-webkit-media-controls {
 .ml-50 {
     margin-left: 50px !important;
 }
-.fz-50 {
+/* .fz-50 {
     font-size: 50px !important;
-}
+} */
 .stroke {
     color: transparent;
     -webkit-text-stroke: 1px #1d1d1d;
@@ -1598,6 +1599,9 @@ video.fullscreen::-webkit-media-controls {
 }
 .footer-logo {
     margin-bottom: 33px;
+}
+.footer-logo img{
+    width: 180px;
 }
 .footer-line {
     width: 16px;
