@@ -704,10 +704,12 @@
     }
     .navbar-expand-lg .navbar-collapse{
         top: 58px;
+        border-radius: 0px;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
         font-size: 16px;
         padding: 4px 15px;
+        line-height: 28px;
     }
     .navbar-expand-lg .navbar-nav li {
         margin-bottom: 8px;
@@ -862,6 +864,10 @@
     }
 /* Header sec */
 
+.btn {
+    line-height: 36px;
+}
+
 h1.secondary-color span {
     display: block;
 }
@@ -900,6 +906,9 @@ h1.secondary-color span {
     font-weight: 500;
     margin: 0 auto;
 }
+.bg-line-main{
+    z-index: 9;
+}
 .slider-text h1 .sub-text {
     font-size: 22px;
     margin-top: 10px;
@@ -923,7 +932,7 @@ h1.secondary-color span {
     height: 46px;
     font-size: 14px;
     padding: 0 44px;
-    line-height: 46px;
+    line-height: 40px;
 }
 /* end */
 .bg-bottom-se, .bg-right-se, .bg-bottom-last {
@@ -1020,10 +1029,16 @@ section.features-list-inner.pad-90.pt-0 {
 .why-choose-section .card-bg-3, .why-choose-section .card-bg-4 {
     margin-top: 20px;
 }
-.why-choose-section.section-second{
+.why-choose-section.section-second {
+    padding-top: 2.5rem;
+    border-top: 1px solid #eeee;
+    padding-bottom: 2rem;
+    margin-bottom: 0px;
+}
+/* .why-choose-section.section-second{
     padding-top: 1.5rem;
     border-top: 1px solid #eeee;
-}
+} */
 
 .main-marq .box .item h4 {
     line-height: 0;
@@ -1036,6 +1051,9 @@ section.features-list-inner.pad-90.pt-0 {
     display: none;
 }
 
+.testimonials_card-main{
+    transform: translate3d(0px, 0px, 0px) !important;
+}
 
 
 /* Get Started Free - Upgrade Anytime */
@@ -1074,12 +1092,20 @@ section.features-list-inner.pad-90.pt-0 {
 .btn-whatsapp-pulse{
     bottom:95px;
 }
-.ontop .btn{
-line-height: 32px;
+.ontop .btn {
+    line-height: 32px;
+    margin-top: 5px;
 }
 .call-action-img {
     padding: 15px 0px;
 }
+.ontop .col-11 {
+    justify-content: space-between;
+    display: inline-block !important;
+    text-align: center;
+    width: 100%;
+}
+
 .customer-support video {
     width: 80%;
 }
@@ -1093,6 +1119,9 @@ line-height: 32px;
 .btn-whatsapp-pulse img {
     width: 25px;
 }
+.testimonials_card-main{
+    margin-top: 20px;
+}
 /* .enquiry-form .btn.enquiry-btn{
     bottom: 200px;
         right: 80px;
@@ -1101,6 +1130,12 @@ line-height: 32px;
 
 .contact-sec{
     margin-bottom: 20px;
+}
+.footer-content {
+    font-size: 14px;
+}
+.footer-heading h5{
+font-size: 18px;
 }
 
 
