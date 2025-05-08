@@ -452,6 +452,7 @@
                 <div class="launch-store d-flex justify-content-center"> <a class="btn btn-primary"
                         href="live-demo.html">Launch Your Store Now</a></div>
             </div>
+            </div>
     </section>
     <!-- end -->
 
@@ -870,15 +871,33 @@
 
     <section class="section_cta">
         <div class="container">
+            <div class="section_cta-video" >
+                <!-- The video itself -->
+                <video autoplay muted playsinline loop style="width: 100%; display: block;">
+                    <source src="images/price-ani.mp4" type="video/mp4">
+                </video>
+    
+                <!-- A transparent clickable overlay -->
+                <a href="price.html" aria-label=""
+                class="video-link-price">
+                    <!-- Optionally you can put text or leave it empty -->
+                </a>
+            </div>
+        </div>
+    </section>
+    
+<!-- 
+    <section class="section_cta">
+        <div class="container">
             <div class="section_cta-video">
                 <a href="price.html" aria-label="">
                     <video autoplay muted loop>
                         <source src="images/price-ani.mp4" type="video/mp4">
                       </video>
                     </a>
-                    <!-- <img src="images/support-img.png" class="img-fluid" alt="customer support"> -->
+                    <img src="images/support-img.png" class="img-fluid" alt="customer support">
                 </div>
-            <!-- <div class="section_cta-bg">
+            <div class="section_cta-bg">
                 <div class="cta_background"></div>
                 <div class="padding-global z-index-2">
 
@@ -901,9 +920,12 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
-    </section>
+    </section> -->
+
+
+
 
     <!-- <section class="price-sec pricing-table-section ">
     <div class="container-fluid py-5">
@@ -994,11 +1016,10 @@
                 </div>
                 <div class="col-xl-6">
                     <div class="heading-sec-container wow zoomIn" data-wow-delay="0.2s">
-                        <video autoplay muted loop>
+                        <video autoplay muted playsinline loop>
                             <source src="images/customer-support.mp4" type="video/mp4">
                             Your browser does not support the video tag.
-                          </video>
-                        <!-- <img src="images/support-img.png" class="img-fluid" alt="customer support"> -->
+                        </video>
                     </div>
                 </div>
             </div>
