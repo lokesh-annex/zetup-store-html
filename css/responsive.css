@@ -24,6 +24,9 @@
     .glass-box img{
         opacity: 0.5;
     }
+    .bottom-star{
+        display: none;
+    }
     .image-top img, .dot-icon img {
         width: 240px;
     }
@@ -45,8 +48,8 @@
         top: 0px;
     }
     .top-star {
-        left: 260px;
-        top: 170px;
+        right: 260px;
+        bottom: 50px;
     }
     .slider-section{
         padding: 9rem 0px 9rem;
@@ -224,14 +227,21 @@
         top: 0px;
     }
     .top-star {
-        left: 260px;
-        top: 170px;
+        right: 250px;
+        bottom: 86px;
     }
     .slider-section{
         padding: 9rem 0px 9rem;
     }
-    .top-star img, .bottom-star img {
+    .top-star img  {
         width: 70px;
+    }
+    .bottom-star{
+        display: block;
+        right: 200px;
+    }
+    .bottom-star img{
+        width: 170px;
     }
     .slider-text h1 {
         font-size: 48px;
@@ -385,6 +395,9 @@
 }
 .image-bottom img {
     width: 200px;
+}
+.bottom-star{
+    display: none;
 }
 .slide-btn .btn{
     height: 46px;
@@ -606,6 +619,9 @@
     }
     .shape-triangle {
         width: 80px;
+    }
+    .bottom-star{
+        display: none;
     }
     .shape-circle {
         width: 60px;

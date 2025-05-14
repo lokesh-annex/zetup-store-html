@@ -465,6 +465,10 @@ h3 span {
 .why-choose-section{
     padding: 4.7vw;
     overflow: hidden;
+
+}
+.why-choose-section.section-second.position-relative.pt-90.mb-30{
+    padding-bottom: 0px;
 }
 /* .why-choose-section .heading-line{
     margin: 0px;
@@ -587,21 +591,24 @@ border-top-right-radius: 50px;
     height: 4px;
     margin-top: 25px;
 }
-.top-star img,
-.bottom-star img {
+.top-star img {
     width: 120px;
+}
+.bottom-star img {
+    width: 280px;
+    opacity: 0.7;
 }
 .top-star {
     position: absolute;
-    right: 370px;
-    bottom: 200px;
+    right: 440px;
+    bottom: 108px;
     z-index: 9;
     width: auto;
 }
 .bottom-star {
     position: absolute;
-    right: 370px;
-    bottom: 290px;
+    right: 360px;
+    bottom: 50px;
     z-index: 9;
     width: auto;
 }
@@ -839,9 +846,21 @@ text-align: center;
     animation-duration: 2.2s;
     animation-iteration-count: infinite;
     transform-origin: bottom;
-    animation-name: up-down-move;
+    /* animation-name: up-down-move; */
+    animation: zoomInOut 4s ease-in-out infinite;
     animation-timing-function: linear;
 }
+@keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2); /* Zoom in */
+    }
+    100% {
+      transform: scale(1); /* Zoom out */
+    }
+  }
 .section-components-anima {
     position: absolute;
     left: 110px;
@@ -1509,7 +1528,12 @@ video.fullscreen::-webkit-media-controls {
   .call-action-img .rotate-text{
     font-size: 40px;
   }
-  
+  .call-action-img .rotate-text span{
+    color: #000000;
+    font-weight: 800;
+    font-size: 48px;
+  }
+
   .butn-circle:hover:after {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -1617,9 +1641,22 @@ video.fullscreen::-webkit-media-controls {
 display: flex;
 gap: 15px;
 }
-.footer .footer-social svg{
-width: 32px;
+
+.footer .footer-social .icon-box{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.footer .footer-social .icon-box a{
+    justify-content: center;
+}
+.footer .footer-social svg{
+    width: 20px;
+    }
 .contact-icon {
     width: 36px;
     height: 36px;
@@ -3203,7 +3240,7 @@ section.live-demo.pad-90 {
 .testimonials-global{
     /* background-image: linear-gradient(180deg, #ffffff, #dfe9fb); */
     border: 1px solid #e3e0e0;
-    padding: 8rem 0px;
+    padding: 4rem 0px;
 }
 .testimonials_card-main {
     background: rgb(245 245 245 / 55%);
