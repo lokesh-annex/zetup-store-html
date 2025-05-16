@@ -280,6 +280,9 @@
     .dot-icon-2 img {
         width: 150px;
     }
+    .how-to-work-box{
+     min-height: 510px;
+    }
 
     /* Launch Your eCommerce Storse */
     .how-to-work-sec img{
@@ -870,7 +873,7 @@ min-height: 425px;
     /* New Css */
 
     h2 {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 36px;
     }   
     /* p{
