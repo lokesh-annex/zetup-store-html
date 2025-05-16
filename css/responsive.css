@@ -210,7 +210,7 @@
         opacity: 0.5;
     }
     .image-top img, .dot-icon img {
-        width: 240px;
+        width: 320px;
     }
     .slider-text {
         max-width: 100%;
@@ -221,17 +221,23 @@
     .dot-icon {
         position: absolute;
         top: 120px;
-        left: 50px;
+        left: 10px;
     }
     .glass-box{
         top: 0px;
     }
+   
     .top-star {
         right: 250px;
-        bottom: 86px;
+        bottom: 40px;
     }
     .slider-section{
         padding: 9rem 0px 9rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .image-top{
+        right: -50px;
     }
     .top-star img  {
         width: 70px;
@@ -239,6 +245,7 @@
     .bottom-star{
         display: block;
         right: 200px;
+        bottom: 0px;
     }
     .bottom-star img{
         width: 170px;
@@ -306,11 +313,13 @@
     padding:4vw  4.7vw;
 }
 /* Why Choose ZetupStore?  */
-
+.why-choose-section .heading-sec-container{
+    margin-bottom: 2rem;
+}
 .why-choose-section .card.card-features {
     border-radius: 30px;
     padding: 20px;
-    min-height: 540px;
+min-height: 425px;
 }
 .why-choose-section .card.card-features img {
     height: 200px;
@@ -321,9 +330,7 @@
     padding-right: 0px;
     line-height: 30px;
 }
-.why-choose-section .card.card-features{
-    min-height: 450px;
-}
+
 .why-choose-section .card.card-features.last-card .last-card-text{
     padding: 20px;
 }
@@ -883,6 +890,9 @@
 .btn {
     line-height: 36px;
 }
+#loading img {
+    width: 120px;
+}
 
 h1.secondary-color span {
     display: block;
@@ -964,6 +974,7 @@ h1.secondary-color span {
 }
 
 /* Launch Your eCommerce Storse */
+
 .heading-sec-container p{
     padding: 10px 10px;
     padding-bottom: 0px;
@@ -978,6 +989,9 @@ h1.secondary-color span {
 }
 .how-to-work-box h3 {
     font-size: 22px;
+}
+.top-content{
+    width: auto;
 }
 .bg-bottom-se{
     bottom: -30px;
@@ -1008,6 +1022,7 @@ h1.secondary-color span {
     margin-top: 30px;
 }
 /* ZetupStore Features */
+
 .why-choose-section{
     padding: 0vw 10px;
 }
@@ -1041,6 +1056,10 @@ h1.secondary-color span {
 section.features-list-inner.pad-90.pt-0 {
     padding-bottom: 0px;
 }
+.why-choose-section .card.card-features img{
+    height: auto;
+}
+
 /* Why Choose ZetupStore?  */
 .why-choose-section .card-bg-3, .why-choose-section .card-bg-4 {
     margin-top: 20px;
@@ -1088,12 +1107,13 @@ section.features-list-inner.pad-90.pt-0 {
 .section_cta {
     padding: 2rem 0rem;
 }
-.section_cta-video video {
-    width: 100%;
-    transform: scale(1.15);
-}
+    .section_cta-video video {
+        transform: scale(1.65);
+        position: relative;
+        left: 16px;
+    }
 .section_cta-video {
-    height: 170px;
+    height: 250px;
     width: 100%;
     margin: 0 auto;
     border-radius: 10px;
@@ -1137,6 +1157,22 @@ section.features-list-inner.pad-90.pt-0 {
 }
 .testimonials_card-main{
     margin-top: 20px;
+}
+.call-action-img .rotate-text span {
+     font-size: 22px;
+        display: block;
+    }
+.customer-support .heading-gh{
+    text-align: center;
+}    
+.customer-support .heading-gh p{
+    margin-top: 1rem;
+}
+.customer-support .heading-gh .btn{
+    margin-top: 0px;
+}
+.customer-support.pad-90 {
+    padding-bottom: 0px;
 }
 /* .enquiry-form .btn.enquiry-btn{
     bottom: 200px;

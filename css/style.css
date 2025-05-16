@@ -1317,6 +1317,9 @@ video.fullscreen::-webkit-media-controls {
     display: -ms-flexbox;
     display: flex;
   }
+  .main-marq .st1-marq{
+    padding-right: 10px;
+  }
   
   .main-marq .strok .item h4 {
     color: transparent !important;
@@ -1354,9 +1357,7 @@ video.fullscreen::-webkit-media-controls {
     margin: 0;
   }
   
-  .main-marq .box .item h4 .icon {
-    margin-bottom: -15px;
-  }
+  
   
   .main-marq .box .item h2 {
     line-height: 1;
@@ -1483,7 +1484,7 @@ video.fullscreen::-webkit-media-controls {
   }
 
   .main-marq .box .item h4 .icon {
-    margin-bottom: -20px;
+    margin-bottom: -12px;
     margin-top: 0px;
     padding-bottom: 0px;
     width: auto;
@@ -1530,7 +1531,7 @@ video.fullscreen::-webkit-media-controls {
   }
   .call-action-img .rotate-text span{
     color: #000000;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 48px;
   }
 
