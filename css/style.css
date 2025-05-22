@@ -94,9 +94,16 @@ h3 span {
 .pad-50 {
     padding: 50px 0px;
 }
+.pl-0 {
+    padding-left: 0px !important;
+}
+.pr-0 {
+    padding-right: 0px !important;
+}
 .pt-50 {
     padding-top: 50px;
 }
+
 .pt-90 {
     padding-top: 90px;
 }
@@ -117,6 +124,9 @@ h3 span {
 }
 .bg-section {
     background: #f5f7f9;
+}
+.bg-white{
+    background: #ffffff;
 }
 .primary-color {
     color: var(--primary-color);
@@ -465,7 +475,6 @@ h3 span {
 .why-choose-section{
     padding: 4.7vw;
     overflow: hidden;
-
 }
 .why-choose-section.section-second.position-relative.pt-90.mb-30{
     padding-bottom: 0px;
@@ -1193,7 +1202,10 @@ video.fullscreen::-webkit-media-controls {
 /* end */
 /* join us */
 .join-us {
-    background: #000000;
+    background: #ffffff;
+}
+.join-us .heading-gh h2{
+
 }
 .row-pattern {
     position: absolute;
@@ -1702,8 +1714,7 @@ gap: 15px;
 /* end */
 /* about us */
 .about-us {
-    padding: 130px 0 115px;
-    background: #fff;
+       padding: 170px 0 70px;
     position: relative;
     overflow: hidden;
     box-shadow: inset 0 3px 4px #e7e7e7;
@@ -1729,8 +1740,8 @@ gap: 15px;
     width: 250px;
 }
 .about-wrap {
-    text-align: center;
-    max-width: 850px;
+    /* text-align: center;
+    max-width: 850px; */
     margin: 0 auto;
     position: relative;
 }
@@ -1756,7 +1767,7 @@ gap: 15px;
     flex-wrap: wrap;
 }
 .about-stats-left-wrap {
-    max-width: 500px;
+    max-width: 600px;
     margin-right: 30px;
     color: #fff;
 }
@@ -1770,13 +1781,70 @@ gap: 15px;
 .about-stats-right-wrap {
     max-width: 450px;
 }
+
+.why-zetupstore{
+        padding: 90px 0 90px;
+}
+.why-zetupstore .zetupstore-stage-wrap,  .why-zetupstore .support-stage-wrap{
+    margin-bottom: 45px;
+}
+.zetupstore-stage-wrap{
+    border: 1px solid #1d202626;
+    border-radius: 15px;
+    padding: 40px;
+    z-index: 9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #ffedd5;
+}
+.drives-growth-stage-wrap {
+      border: 1px solid #1d202626;
+    border-radius: 15px;
+    padding: 40px;
+    z-index: 9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #c3ecc9;
+}
+.about-us .about-hero-img {
+    position: absolute;
+    right: -20px;
+    max-width: 35%;
+    top: 90px;
+}
+
+.contact-hero .about-hero-img {
+    position: absolute;
+    right: -20px;
+    max-width: 24%;
+    top: 45px;
+}
+.faq-hero .about-hero-img {
+    position: absolute;
+    right: 40px;
+    max-width: 15%;
+    top: 120px;
+}
+
+/* .about-us.why-zetupstore .about-hero-img {
+    position: absolute;
+      left: -20px;
+      right: auto;
+    max-width: 35%;
+    top: 20px;
+} */
+
 .stats-card-main-wrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .about-stats-sec {
-    background-color: #191d3c;
+    background-color: var(--primary-color);
     position: relative;
     overflow: hidden;
 }
@@ -1821,7 +1889,15 @@ gap: 15px;
     background: #f4f9ff91;
 }
 .support-stage-wrap {
-    padding: 60px 0;
+    border: 1px solid #1d202626;
+    border-radius: 15px;
+        padding:40px;
+    z-index: 9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #d4efff;
 }
 .support-stage-txt-wrap {
     margin-top: 20px;
@@ -2935,6 +3011,9 @@ section.live-demo.pad-90 {
   .pricing-table .row .col{
     border-right: 1px solid #f3f3f3;
   }
+  .pricing-table .row .col strong{
+line-height: 30px;
+  }
   .pricing-header {
     background: #fff;
     border-bottom: 1px solid #eee;
@@ -3029,6 +3108,39 @@ section.live-demo.pad-90 {
     }
   }
 /* Price end */
+
+/* About us page  */
+
+
+
+/* and */
+
+/* FAQ page css */
+.faqs-section .accordion-item button{
+font-size: 18px;
+font-weight: 500;
+line-height: 36px;
+}
+.accordion-item {
+  transform: translateX(-30px);
+  transition: all 0.5s ease;
+}
+.accordion-item.show, .accordion-item.visible {
+  transform: translateX(0);
+}
+.faqs-section .accordion-button:not(.collapsed), .faqs-section button:focus:not(:focus-visible){
+    color: var(--primary-color);
+        border-color: none !important;
+        box-shadow:none !important;
+}
+
+
+
+/*end FAQ page css */
+
+
+
+
 /* Contct us page ani */
 .ball {
     position: relative;
