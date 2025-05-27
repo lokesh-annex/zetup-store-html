@@ -379,6 +379,9 @@ min-height: 425px;
 .slider-section {
     padding: 7rem 0px 5rem;
 }
+.section_privacy{
+    padding: 30px 0px;
+}
 .slider-section p {
     font-size: 16px;
     margin: 20px 0px;
@@ -504,6 +507,48 @@ min-height: 425px;
 
 
 }
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .landing-page {
+        padding: 1rem;
+    }
+
+    .hero-section {
+        padding: 2rem 1rem;
+        margin: -1rem -1rem 2rem -1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .cta-section {
+        padding: 2rem 1rem;
+        margin: 2rem -1rem -1rem -1rem;
+    }
+
+    .why-choose-section,
+    .launch-steps-section,
+    .features-section,
+    .testimonials-section {
+        padding: 2rem 1rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+}
 @media (max-width:767px) {
     .pt-90 {
         padding-top: 30px;
@@ -561,7 +606,12 @@ min-height: 425px;
         text-align: center !important;
     }
 
-   
+   .section_privacy{
+    padding: 30px 0px;
+}
+.faq-hero .about-hero-img{
+    display: none;
+}
     .support-section {
         margin-top: 37px;
     }
@@ -713,6 +763,7 @@ min-height: 425px;
         padding: 8rem 0px 80px;
     }
 }
+
 
 
 @media (max-width:576px) {
@@ -1185,6 +1236,14 @@ section.features-list-inner.pad-90.pt-0 {
     bottom: 200px;
         right: 80px;
 } */
+
+
+
+
+
+
+
+
 /* Footer */
 
 .contact-sec{
@@ -1200,3 +1259,7 @@ font-size: 18px;
 
 
 }
+
+
+
+
