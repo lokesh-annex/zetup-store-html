@@ -53,8 +53,19 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="price.html">Price</a>
                         </li>
-                         <li class="nav-item">
-                            <a class="nav-link" href="migration-services.html">Migration Services</a>
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="migrationDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Migration Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="migrationDropdown">
+                                <li><a class="dropdown-item" href="shopify-sale.html">Shopify to ZetupStore
+                                        Migration</a></li>
+                                <li><a class="dropdown-item" href="wix-migration.html">Wix to ZetupStore
+                                        Migration</a></li>
+                                <li><a class="dropdown-item" href="woocommerce-migration.html">WooCommerce to
+                                        ZetupStore Migration</a></li>
+                            </ul>
                         </li>
                          <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
@@ -116,10 +127,10 @@
                 <h2 class="font-weight-700">Pricing Plans <span>Comparison</span></h2>
                 <div class="heading-line"></div>
             </div>
-            <div class="table-responsive">
+       <div class="table-responsive" id="pricing-table-section">
                 <div class="pricing-table">
                     <!-- Header -->
-                    <div class="row pricing-header">
+                  <div class="row pricing-header" id="pricing-header">
                         <div class="col">
                             <div class="plan-title">Feature</div>
                         </div>
@@ -133,8 +144,7 @@
                             <div class="plan-price">₹900<span class="plan-period">/mo</span></div>
                         </div>
                         <div class="col">
-                            <div class="plan-title">Growth </div>
-                            <div class="plan-title">(Best Value)</div>
+                            <div class="plan-title">Growth <span class="price-sub-title">(Best Value)</span> </div>
                             <div class="plan-price">₹500<span class="plan-period">/mo</span></div>
                         </div>
                         <div class="col">
@@ -752,7 +762,7 @@
                             </h2>
                         </div>
                         <div class="ml-auto">
-                            <a href="contact-us.html" class="btn btn-primary mr-20">Contact Us</a>
+                            <a href="contact-us.html" class="btn btn-primary mr-20">Launch Your Store Now</a>
                         </div>
                     </div>
                 </div>
@@ -951,6 +961,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const header = document.getElementById('pricing-header');
+  const section = document.getElementById('pricing-table-section');
+  const headerHeight = header.offsetHeight;
+
+  // Placeholder for avoiding layout shift
+  const placeholder = document.createElement('div');
+  placeholder.style.height = headerHeight + 'px';
+  placeholder.style.display = 'none';
+  header.parentNode.insertBefore(placeholder, header);
+
+  function onScroll() {
+    const sectionRect = section.getBoundingClientRect();
+    if (sectionRect.top <= 0 && sectionRect.bottom > headerHeight) {
+      header.classList.add('sticky');
+      placeholder.style.display = 'block';
+    } else {
+      header.classList.remove('sticky');
+      placeholder.style.display = 'none';
+    }
+  }
+
+  window.addEventListener('scroll', onScroll);
+});
+</script>
 </body>
 
 </html>
