@@ -512,10 +512,22 @@ min-height: 425px;
 
 /* Responsive styles */
 @media (max-width: 768px) {
+
+    .navbar-expand-lg .navbar-nav{
+        align-items:self-start;
+}
     .landing-page {
         padding: 1rem;
     }
-
+.about-stats-left-wrap{
+    margin-right:0px;
+}
+.about-us {
+    padding: 140px 0 70px;
+}
+.about-stats-right-wrap, .about-stats-left-wrap{
+  max-width: 100%;
+}
     .hero-section {
         padding: 2rem 1rem;
         margin: -1rem -1rem 2rem -1rem;
@@ -547,6 +559,37 @@ min-height: 425px;
 
     .section-description {
         font-size: 1rem;
+    }
+    /* about page */
+    .about-us .about-hero-img{
+        display: none;
+    }
+    .pricing-table{
+        width: 100vw;
+    }
+    .table-responsive{
+        overflow-x: scroll;
+    }
+    .call-action-img .rotate-text span{
+            font-size: 28px;
+    }
+    /* migration pages */
+    .migration-list {
+       height: auto;
+       margin-bottom: 15px;
+    }
+    .accordion-item{
+        transform: translateX(0px);
+    }
+    .process-steps {
+        gap: 10px;
+        align-items: center;
+    }
+    .text-content h3{        
+    font-size: 22px;
+    }
+    .last-feature-card{
+        margin-top: 20px;
     }
 }
 @media (max-width:767px) {
@@ -826,6 +869,43 @@ min-height: 425px;
     .section-second-shape{
         display: none;
     }
+    .pricing-table-section {
+    padding: 1vw;
+}
+.pricing-table, .pricing-header.sticky {
+        width: 190vw;
+    }
+      .pricing-header.sticky {
+        position: relative;
+        top: 0px;
+    }
+    .pricing-table > div{
+height: auto !important;
+    }
+    
+    .plan-price {
+        font-size: 1rem;
+    }
+    .pricing-table .row .col strong {
+    line-height: 24px;
+}
+.pricing-table .row .col strong {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.contactinfo-item .icon-box svg{
+        max-height: 42px;
+}
+.col-md-6.pr-0, .col-md-6.pl-0 {
+    padding: 0px !important;
+}
+.icon-box-cont h4{
+    font-size: 20px;
+}
+.contactinfo-section .contact-form-style-03 input, .contactinfo-section .contact-form-style-03 textarea {
+padding-left: 0px;
+}
     .footer {
         padding-top: 30px;
     }
@@ -858,7 +938,10 @@ min-height: 425px;
         font-size: 22px;
     }
     .support-stage-wrap {
-        padding: 0px;
+        padding: 15px;
+    }
+    .about-wrap h2{
+     margin-top: 15px;   
     }
     .features-list-inner .img.main-img1 img.lg-circle{
         width: 40%;
@@ -882,7 +965,26 @@ min-height: 425px;
     .features-list-inner p{
         line-height: 1.6;
     }
+    /* .about-us .about-hero-img{
+        display: none;
+    } */
 
+
+    .about-us {
+                text-align: center;
+    }
+    .about-wrap{
+        padding: 0px 10px;
+    }
+    .zetupstore-stage-wrap{
+        padding: 10px;
+    }
+    .stats-card h2{
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    
+  
     /* Contact Us page     */
 
     .contactinfo-section{
@@ -890,6 +992,7 @@ min-height: 425px;
     }
     .contactinfo-item {
         margin-top: 0px;
+        padding: 20px 15px;
     }
     .bar {
         width: 120px;
@@ -925,7 +1028,7 @@ min-height: 425px;
 
     h2 {
         font-size: 22px;
-        line-height: 36px;
+        line-height: 32px;
     }   
     /* p{
         font-size: 14px !important;
@@ -1076,7 +1179,42 @@ h1.secondary-color span {
     margin-top: 30px;
 }
 /* ZetupStore Features */
-
+.why-zetupstore-section table tr td{
+font-size: 14px;
+}
+.timeline-item{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.feature-card-large{
+    padding: 20px;
+}
+.feature-card-large .card-content, .transition-card-large .card-content{
+    align-items: center;
+}
+.transition-card{
+    text-align: center;
+}
+.transition-card .icon-box{
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+.step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+}
+.text-content h3, .step-content h3 {
+        font-size: 20px;
+}
+.faqs-section .accordion-item button {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px;
+}
+.contact-form-card, .contact-form-wrapper {
+    padding: 20px;
+}
 .why-choose-section{
     padding: 0vw 10px;
 }
@@ -1090,6 +1228,11 @@ h1.secondary-color span {
 }
 .features-main-inner .row {
     gap: 10px;
+}
+.why-zetupstore-section .feature-card{
+    padding: 20px;
+    height: auto;
+    margin-top: 0px;
 }
 .features-main-inner .video-container {
     width: 100%;
@@ -1118,6 +1261,7 @@ section.features-list-inner.pad-90.pt-0 {
 .why-choose-section .card-bg-3, .why-choose-section .card-bg-4 {
     margin-top: 20px;
 }
+
 .why-choose-section.section-second {
     padding-top: 2.5rem;
     border-top: 1px solid #eeee;
