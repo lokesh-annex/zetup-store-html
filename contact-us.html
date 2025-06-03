@@ -272,7 +272,7 @@
 
                     </div>
                     <div class="col-xl-8 col-lg-8 col-12">
-                        <form action method="post"
+                        <form novalidate method="post" id="contactForm" 
                             class="contact-form-style-03">
 
                             <h3>How we can help you?</h3>
@@ -307,9 +307,10 @@
                                                         opacity="1"
                                                         data-original="#000000"
                                                         class></path></g></svg></span>
-                                        <input class="form-control required"
+                                        <input class="form-control required" required
                                             id="simple" type="text" name="name"
                                             placeholder="What's your good name?">
+                                            <div class="invalid-feedback">Please enter your full name</div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 pr-0">
@@ -343,10 +344,11 @@
                                                         opacity="1"
                                                         data-original="#000000"
                                                         class></path></g></svg></span>
-                                        <input class="form-control required"
+                                        <input class="form-control required" required
                                             id="exampleInputEmail2" type="email"
                                             name="email"
                                             placeholder="Enter your email address">
+                                             <div class="invalid-feedback">Please enter valid email</div>
                                     </div>
                                 </div>
 
@@ -571,6 +573,7 @@
     <script src="js/main.js"></script>
       <script src="js/form-validations.js" ></script>
     <script src="js/enquiry-form.js" ></script>
+    <script src="js/contact-us.js" ></script>
 </body>
 
 </html>

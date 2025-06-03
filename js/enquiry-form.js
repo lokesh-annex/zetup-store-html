@@ -1,7 +1,4 @@
-//add html form so that we can have same form iin multiple places
-document.addEventListener("DOMContentLoaded", function () {
-  const container = document.getElementById("enquiry-form-section");
-  container.innerHTML = `
+const enquiryFormHtml = `
     <div class="enquiry-form">
         <div class="enquiry-form-container">
             <div class="cross-btn">
@@ -47,12 +44,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                 </div>
             </form>
+             <div class="d-none" id="thank-you-message">Thank you</div>
         </div>
         <div class="btn btn-primary enquiry-btn">
             <img src="images/cond.png" alt="enquiry">
         </div>
+        
     </div>
+   
   `;
+
+//add html form so that we can have same form iin multiple places
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById("enquiry-form-section");
+  container.innerHTML = enquiryFormHtml;
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -61,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const inputs = getAllFormFields(form);
 
   // Form submission
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", async function (event) {
     event.preventDefault();
     event.stopPropagation();
 
@@ -75,7 +80,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     if (isValid) {
-      submitForm();
+      const success = document.getElementById("thank-you-message");
+      try {
+        await submitForm("enquiry");
+        success.classList.add("d-block");
+        form.classList.add("d-none");
+      } catch (err) {
+        console.error("Enquiry failed.");
+      } finally {
+        setTimeout(() => {
+          success.classList.add("d-none");
+          form.classList.remove("d-none");
+        }, 200);
+      }
     } else {
       form.classList.add("was-validated");
     }

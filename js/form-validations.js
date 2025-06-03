@@ -54,17 +54,18 @@ function getAllFormFields(form) {
 }
 
 // Form submission function
-async function submitForm() {
+async function submitForm(wherefrom) {
   const formData = {
     name: document.getElementById("inputName").value,
     company_name: document.getElementById("companyName").value,
     email: document.getElementById("Email").value,
     phone: document.getElementById("phone").value,
     message: document.getElementById("message").value,
+    where_from: wherefrom ?? "enquiry",
   };
 
   try {
-    const response = await fetch("YOUR_API_ENDPOINT", {
+    const response = await fetch("https://dev.zetupstore.com/api/enquiry", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -74,7 +75,7 @@ async function submitForm() {
 
     if (!response.ok) throw new Error("Submission failed");
 
-    alert("Thank you! Your enquiry has been submitted.");
+    // alert("Thank you! Your enquiry has been submitted.");
     form.reset();
     inputs.forEach((input) => {
       input.classList.remove("is-valid", "validate-me");
