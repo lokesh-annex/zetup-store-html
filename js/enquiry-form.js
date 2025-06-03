@@ -18,7 +18,7 @@ const enquiryFormHtml = `
                     </div>
                     <div class="col-xl-12">
                         <div class="mb-30">
-                            <input type="text" class="form-control" placeholder=" Company Name" name="company_name"
+                            <input type="text" class="form-control" placeholder="Company Name" name="company_name"
                                 id="companyName">
                         </div>
                     </div>
@@ -30,7 +30,8 @@ const enquiryFormHtml = `
                     </div>
                     <div class="col-xl-12">
                         <div class="mb-30">
-                            <input type="text" class="form-control pincode" placeholder="Phone" name="phone" id="phone">
+                            <input type="text" class="form-control pincode" placeholder="Phone" name="phone" id="phone" required>
+                            <div class="invalid-feedback">Please enter valid Phone no.</div>
                         </div>
                     </div>
                     <div class="col-xl-12">
@@ -78,20 +79,30 @@ document.addEventListener("DOMContentLoaded", function () {
         isValid = false;
       }
     });
-
     if (isValid) {
       const success = document.getElementById("thank-you-message");
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
       try {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Submitting...";
+
         await submitForm("enquiry");
         success.classList.add("d-block");
         form.classList.add("d-none");
       } catch (err) {
         console.error("Enquiry failed.");
       } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
         setTimeout(() => {
           success.classList.add("d-none");
           form.classList.remove("d-none");
-        }, 200);
+          form.reset();
+          inputs.forEach((input) => {
+            input.classList.remove("is-valid", "validate-me");
+          });
+        }, 2000);
       }
     } else {
       form.classList.add("was-validated");

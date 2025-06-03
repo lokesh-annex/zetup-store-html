@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const inputs = getAllFormFields(form);
 
   // Form submission
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", async function (event) {
     event.preventDefault();
     event.stopPropagation();
 
@@ -18,7 +18,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     if (isValid) {
-      submitForm();
+      const success = document.getElementById("contact-us-thank-you-message");
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+      try {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Submitting...";
+        await submitForm("contact-us");
+        success.classList.add("d-block");
+        form.classList.add("d-none");
+      } catch (err) {
+        console.error("contact us failed. ", err);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+        setTimeout(() => {
+          success.classList.add("d-none");
+          form.classList.remove("d-none");
+          form.reset();
+          inputs.forEach((input) => {
+            input.classList.remove("is-valid", "validate-me");
+          });
+        }, 2000);
+      }
     } else {
       form.classList.add("was-validated");
     }

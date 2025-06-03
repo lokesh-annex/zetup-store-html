@@ -16,7 +16,7 @@ function validateField(field) {
     return false;
   }
 
-  if (field.id === "phone" && field.value && !/^\d{10}$/.test(field.value)) {
+  if (field.id === "phone" && field.value) {
     field.classList.add("is-invalid");
     field.classList.remove("is-valid");
     return false;
@@ -57,12 +57,15 @@ function getAllFormFields(form) {
 async function submitForm(wherefrom) {
   const formData = {
     name: document.getElementById("inputName").value,
-    company_name: document.getElementById("companyName").value,
+    company_name: document.getElementById("companyName")?.value,
     email: document.getElementById("Email").value,
     phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value,
+    message: document.getElementById("message")?.value,
+    store_url: document.getElementById("storeUrl")?.value,
     where_from: wherefrom ?? "enquiry",
   };
+
+  console.log("line 69 -------------> ", formData);
 
   try {
     const response = await fetch("https://dev.zetupstore.com/api/enquiry", {
@@ -73,19 +76,16 @@ async function submitForm(wherefrom) {
       body: JSON.stringify(formData),
     });
 
-    if (!response.ok) throw new Error("Submission failed");
+    console.log("line 77 ------------> ", response);
+    console.log("line 78 ------------> ", response.status);
+
+    if (![200, 201].includes(response.status)) {
+      throw new Error("Submission failed");
+    }
 
     // alert("Thank you! Your enquiry has been submitted.");
-    form.reset();
-    inputs.forEach((input) => {
-      input.classList.remove("is-valid", "validate-me");
-    });
   } catch (error) {
     console.error("Error:", error);
     alert("There was an error submitting your form. Please try again.");
   }
-}
-
-function handleContactForApi(form) {
-  const inputs = getAllFormFields(form);
 }
