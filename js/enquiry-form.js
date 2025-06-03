@@ -60,7 +60,6 @@ const enquiryFormHtml = `
         <div class="btn btn-primary enquiry-btn">
             <img src="images/cond.png" alt="enquiry">
         </div>
-        
     </div>
    
   `;
