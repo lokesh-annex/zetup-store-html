@@ -1,661 +1,935 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Zetup Store</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/font.css">
-     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
+    <link rel="stylesheet" href="css/font.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
 
-<body>
+  <body>
     <!-- loading -->
     <div id="loading">
-        <div id="loading-center">
-            <img src="images/logo.gif" alt="loader">
-        </div>
+      <div id="loading-center">
+        <img src="images/logo.gif" alt="loader" />
+      </div>
     </div>
     <!-- loading End -->
     <!--================================= -->
     <!-- Header -->
 
     <header class="sticky-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg ">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="logo">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="images/menu.png" alt="menu" />
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="price.html">Price</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="migrationDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Migration Services <i class="fas fa-chevron-down"></i>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <img src="images/menu.png" alt="menu">
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="price.html">Price</a>
-                        </li>
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="migrationDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Migration Services <i class="fas fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="migrationDropdown">
-                                <li><a class="dropdown-item" href="shopify-sale.html">Shopify to ZetupStore
-                                        Migration</a></li>
-                                <li><a class="dropdown-item" href="wix-migration.html">Wix to ZetupStore
-                                        Migration</a></li>
-                                <li><a class="dropdown-item" href="woocommerce-migration.html">WooCommerce to
-                                        ZetupStore Migration</a></li>
-                            </ul>
-                        </li>
-                        <!-- <li class="nav-item">
+                <ul class="dropdown-menu" aria-labelledby="migrationDropdown">
+                  <li>
+                    <a class="dropdown-item" href="shopify-sale.html"
+                      >Shopify to ZetupStore Migration</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="wix-migration.html"
+                      >Wix to ZetupStore Migration</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="woocommerce-migration.html"
+                      >WooCommerce to ZetupStore Migration</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
                         </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item last-menu">
-                            <a class="nav-link" href="https://zetupstore.com/login">Login</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav>
-        </div>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+              </li>
+              <li class="nav-item last-menu">
+                <a class="nav-link" href="https://zetupstore.com/login"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- end -->
 
     <!-- Hero Section with Contact Form -->
     <section class="hero-section-split about-us">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-8">
-                    <article class="about-wrap">
-                        <h2 class="font-weight-700">Switch from Shopify & Save More on Every Sale!</h2>
-                        <p class="mr-20">Tired of paying transaction fees and app charges? Get freedom, speed, savings
-                            and complete data integrity with ZetupStore. Make the move today!</p>
-                        <div class="hero-buttons">
-                            <a href="#contact-form" class="btn btn-primary">Start Migration Now</a>
-                        </div>
-
-                    </article>
-                </div>
-                <div class="col-xl-4">
-                    <div class="about-hero-img potential-img">
-                        <img class="img-fluid" src="images/potential-icon.svg" alt="img-1">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-8">
+            <article class="about-wrap">
+              <h2 class="font-weight-700">
+                Switch from Shopify & Save More on Every Sale!
+              </h2>
+              <p class="mr-20">
+                Tired of paying transaction fees and app charges? Get freedom,
+                speed, savings and complete data integrity with ZetupStore. Make
+                the move today!
+              </p>
+              <div class="hero-buttons">
+                <a href="#contact-form" class="btn btn-primary"
+                  >Start Migration Now</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="col-xl-4">
+            <div class="about-hero-img potential-img">
+              <img
+                class="img-fluid"
+                src="images/potential-icon.svg"
+                alt="img-1"
+              />
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Why Migrate from Shopify -->
     <section class="why-transition-section pad-90">
-        <div class="container">
-            <div class="heading-sec-container mb-40 text-center">
-                <h2 class="font-weight-700">Why Transition from <span>Shopify?</span></h2>
-                <div class="heading-line"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="transition-card">
-                        <div class="icon-box"><img src="images/plugin-n.svg" alt="Fees"></div>
-                        <h3>High Transaction Fees</h3>
-                        <p>Shopify takes a cut on every sale — which can add up quickly and eat into your profits.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="transition-card">
-                        <div class="icon-box"><img src="images/Integration-icon.svg" alt="Customization"></div>
-                        <h3>Limited Customization</h3>
-                        <p>You’ll need expensive apps and developers for full control, adding more cost and complexity.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="transition-card">
-                        <div class="icon-box"><img src="images/costly-icon.svg" alt="Costs"></div>
-                        <h3>Rising Costs</h3>
-                        <p>As you grow, so do your monthly expenses with paid apps and premium plans.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="transition-card">
-                        <div class="icon-box"><img src="images/security-icon.svg" alt="SEO Limitations"></div>
-                        <h3>SEO & Growth Limitations</h3>
-                        <p>Shopify's performance and SEO options are basic — holding back your store's visibility.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="heading-sec-container mb-40 text-center">
+          <h2 class="font-weight-700">
+            Why Transition from <span>Shopify?</span>
+          </h2>
+          <div class="heading-line"></div>
         </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="transition-card">
+              <div class="icon-box">
+                <img src="images/plugin-n.svg" alt="Fees" />
+              </div>
+              <h3>High Transaction Fees</h3>
+              <p>
+                Shopify takes a cut on every sale — which can add up quickly and
+                eat into your profits.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="transition-card">
+              <div class="icon-box">
+                <img src="images/Integration-icon.svg" alt="Customization" />
+              </div>
+              <h3>Limited Customization</h3>
+              <p>
+                You’ll need expensive apps and developers for full control,
+                adding more cost and complexity.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="transition-card">
+              <div class="icon-box">
+                <img src="images/costly-icon.svg" alt="Costs" />
+              </div>
+              <h3>Rising Costs</h3>
+              <p>
+                As you grow, so do your monthly expenses with paid apps and
+                premium plans.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="transition-card">
+              <div class="icon-box">
+                <img src="images/security-icon.svg" alt="SEO Limitations" />
+              </div>
+              <h3>SEO & Growth Limitations</h3>
+              <p>
+                Shopify's performance and SEO options are basic — holding back
+                your store's visibility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Data Migration Section -->
     <section class="data-migration-section pad-90">
-        <div class="container">
-            <div class="heading-sec-container mb-40 text-center">
-                <h2 class="font-weight-700">Data Can Be Migrated From Shopify To <span>ZetupStore</span></h2>
-                <div class="heading-line"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="migration-list">
-                        <h3>Products</h3>
-                        <ul>
-                            <li>Product name</li>
-                            <li>SKU code</li>
-                            <li>Price</li>
-                            <li>Product description</li>
-                            <li>Category</li>
-                            <li>Sub_Category</li>
-                            <li>Status</li>
-                            <li>Weight(kg)</li>
-                            <li>Variant Price</li>
-                            <li>Quantity</li>
-                            <li>Brand</li>
-                            <li>Image_title</li>
-                            <li>Options</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="migration-list">
-                        <h3>Product Categories</h3>
-                        <ul>
-                            <li>Name</li>
-                            <li>Description</li>
-                            <li>Image</li>
-                            <li>Meta Title, Meta Description</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="heading-sec-container mb-40 text-center">
+          <h2 class="font-weight-700">
+            Data Can Be Migrated From Shopify To <span>ZetupStore</span>
+          </h2>
+          <div class="heading-line"></div>
         </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="migration-list">
+              <h3>Products</h3>
+              <ul>
+                <li>Product name</li>
+                <li>SKU code</li>
+                <li>Price</li>
+                <li>Product description</li>
+                <li>Category</li>
+                <li>Sub_Category</li>
+                <li>Status</li>
+                <li>Weight(kg)</li>
+                <li>Variant Price</li>
+                <li>Quantity</li>
+                <li>Brand</li>
+                <li>Image_title</li>
+                <li>Options</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="migration-list">
+              <h3>Product Categories</h3>
+              <ul>
+                <li>Name</li>
+                <li>Description</li>
+                <li>Image</li>
+                <li>Meta Title, Meta Description</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Why ZetupStore -->
     <section class="why-zetupstore-section pad-90">
-        <div class="container">
-            <div class="heading-sec-container mb-40 text-center">
-                <h2 class="font-weight-700">Why <span>ZetupStore</span> is the Smarter Choice</h2>
-                <div class="heading-line"></div>
-                <p>Compare Shopify vs. ZetupStore</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4">
-                    <table class="table table-bordered text-center">
-                        <thead>
-                            <tr>
-                                <th>Features</th>
-                                <th>Shopify</th>
-                                <th>ZetupStore</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Transaction Fees</td>
-                                <td>2% or more per transaction</td>
-                                <td>0% Transaction Fees</td>
-                            </tr>
-                            <tr>
-                                <td>Theme Customization</td>
-                                <td>Limited without apps</td>
-                                <td>Full Customization</td>
-                            </tr>
-                            <tr>
-                                <td>Monthly Cost</td>
-                                <td>High Monthly Fees</td>
-                                <td>Cost-Effective Plans (including Free)</td>
-                            </tr>
-                            <tr>
-                                <td>SEO & Site Speed</td>
-                                <td>Basic</td>
-                                <td>Advanced SEO + Fast Load Times</td>
-                            </tr>
-                            <tr>
-                                <td>Plugin Dependency</td>
-                                <td>Heavy</td>
-                                <td>None</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="row g-4">
-                        <div class="col-lg-6 col-12">
-                            <div class="feature-box text-center p-4 shadow-sm rounded">
-                                <img src="images/no-fees.svg" alt="No Fees" class="mb-3" style="height: 40px;">
-                                <h4 class="h6 font-weight-bold">No Transaction Fees</h4>
-                                <p class="small">Keep 100% of your revenue — no hidden cuts.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="feature-box text-center p-4 shadow-sm rounded">
-                                <img src="images/customization-icon.svg" alt="Customization" class="mb-3"
-                                    style="height: 40px;">
-                                <h4 class="h6 font-weight-bold">Customizable Themes</h4>
-                                <p class="small">Full control over your storefront design.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="feature-box text-center p-4 shadow-sm rounded">
-                                <img src="images/fast-seo.svg" alt="Fast SEO" class="mb-3" style="height: 40px;">
-                                <h4 class="h6 font-weight-bold">Fast & SEO-Friendly</h4>
-                                <p class="small">Get higher rankings with lightning-fast pages.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="feature-box text-center p-4 shadow-sm rounded">
-                                <img src="images/affordable.svg" alt="Affordable" class="mb-3" style="height: 40px;">
-                                <h4 class="h6 font-weight-bold">Affordable Plans</h4>
-                                <p class="small">Powerful features without the premium price.</p>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="feature-box text-center p-4 shadow-sm rounded">
-                                <img src="images/no-p.svg" alt="No Plugin Needed" class="mb-3" style="height: 40px;">
-                                <h4 class="h6 font-weight-bold">No Plugins Required</h4>
-                                <p class="small">Everything built-in — no dependency chaos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="heading-sec-container mb-40 text-center">
+          <h2 class="font-weight-700">
+            Why <span>ZetupStore</span> is the Smarter Choice
+          </h2>
+          <div class="heading-line"></div>
+          <p>Compare Shopify vs. ZetupStore</p>
         </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4">
+            <table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th>Features</th>
+                  <th>Shopify</th>
+                  <th>ZetupStore</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Transaction Fees</td>
+                  <td>2% or more per transaction</td>
+                  <td>0% Transaction Fees</td>
+                </tr>
+                <tr>
+                  <td>Theme Customization</td>
+                  <td>Limited without apps</td>
+                  <td>Full Customization</td>
+                </tr>
+                <tr>
+                  <td>Monthly Cost</td>
+                  <td>High Monthly Fees</td>
+                  <td>Cost-Effective Plans (including Free)</td>
+                </tr>
+                <tr>
+                  <td>SEO & Site Speed</td>
+                  <td>Basic</td>
+                  <td>Advanced SEO + Fast Load Times</td>
+                </tr>
+                <tr>
+                  <td>Plugin Dependency</td>
+                  <td>Heavy</td>
+                  <td>None</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-4">
+              <div class="col-lg-6 col-12">
+                <div class="feature-box text-center p-4 shadow-sm rounded">
+                  <img
+                    src="images/no-fees.svg"
+                    alt="No Fees"
+                    class="mb-3"
+                    style="height: 40px"
+                  />
+                  <h4 class="h6 font-weight-bold">No Transaction Fees</h4>
+                  <p class="small">
+                    Keep 100% of your revenue — no hidden cuts.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="feature-box text-center p-4 shadow-sm rounded">
+                  <img
+                    src="images/customization-icon.svg"
+                    alt="Customization"
+                    class="mb-3"
+                    style="height: 40px"
+                  />
+                  <h4 class="h6 font-weight-bold">Customizable Themes</h4>
+                  <p class="small">Full control over your storefront design.</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="feature-box text-center p-4 shadow-sm rounded">
+                  <img
+                    src="images/fast-seo.svg"
+                    alt="Fast SEO"
+                    class="mb-3"
+                    style="height: 40px"
+                  />
+                  <h4 class="h6 font-weight-bold">Fast & SEO-Friendly</h4>
+                  <p class="small">
+                    Get higher rankings with lightning-fast pages.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="feature-box text-center p-4 shadow-sm rounded">
+                  <img
+                    src="images/affordable.svg"
+                    alt="Affordable"
+                    class="mb-3"
+                    style="height: 40px"
+                  />
+                  <h4 class="h6 font-weight-bold">Affordable Plans</h4>
+                  <p class="small">
+                    Powerful features without the premium price.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="feature-box text-center p-4 shadow-sm rounded">
+                  <img
+                    src="images/no-p.svg"
+                    alt="No Plugin Needed"
+                    class="mb-3"
+                    style="height: 40px"
+                  />
+                  <h4 class="h6 font-weight-bold">No Plugins Required</h4>
+                  <p class="small">
+                    Everything built-in — no dependency chaos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- How Migration Works -->
     <section class="migration-process-section pad-90">
-        <div class="container">
-            <div class="heading-sec-container mb-40 text-center">
-                <h2 class="font-weight-700">How the Migration Process <span>Works</span></h2>
-                <div class="heading-line"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="process-card">
-                        <div class="step-number">1</div>
-                        <h3>Sign Up</h3>
-                        <p>Create a free account on ZetupStore and access your dashboard.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="process-card">
-                        <div class="step-number">2</div>
-                        <h3>Choose Theme</h3>
-                        <p>Select a premium template and customize your store look.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="process-card">
-                        <div class="step-number">3</div>
-                        <h3>Import Data</h3>
-                        <p>Use our tool to import Shopify products, customers, and orders securely.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="process-card">
-                        <div class="step-number">4</div>
-                        <h3>Launch & Grow</h3>
-                        <p>Go live, enjoy lower costs, and improved speed with full support.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="heading-sec-container mb-40 text-center">
+          <h2 class="font-weight-700">
+            How the Migration Process <span>Works</span>
+          </h2>
+          <div class="heading-line"></div>
         </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="process-card">
+              <div class="step-number">1</div>
+              <h3>Sign Up</h3>
+              <p>
+                Create a free account on ZetupStore and access your dashboard.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="process-card">
+              <div class="step-number">2</div>
+              <h3>Choose Theme</h3>
+              <p>Select a premium template and customize your store look.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="process-card">
+              <div class="step-number">3</div>
+              <h3>Import Data</h3>
+              <p>
+                Use our tool to import Shopify products, customers, and orders
+                securely.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="process-card">
+              <div class="step-number">4</div>
+              <h3>Launch & Grow</h3>
+              <p>
+                Go live, enjoy lower costs, and improved speed with full
+                support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Success Stories -->
     <section class="success-stories-section pad-90">
-        <div class="container text-center">
-            <h2 class="font-weight-700">Success Stories from <span>Shopify Migrants</span></h2>
-            <div class="heading-line"></div>
-            <p>Slide through testimonials from happy business owners who made the switch:</p>
-            <div class="testimonials-grid">
-                <div class="testimonial-card-large">
-                    <p>"Switching from Shopify to ZetupStore slashed our monthly costs and gave us complete control over
-                        our store. Best decision we made!"</p>
-                    <p class="author"> – Alex R. </p>
-                    <p class="role">Home Decor Brand Owner</p>
-                </div>
-                <div class="testimonial-card-large">
-                    <p>"The migration was smooth, the site is faster, and our sales have improved without transaction
-                        cuts!"
-                    </p>
-                    <p class="author"> – Priya S.</p>
-                    <p class="role">Fashion Boutique Founder
-                    </p>
-                </div>
-                <div class="testimonial-card-large last-testimonial-card">
-                    <p>"ZetupStore gave us the SEO flexibility Shopify never could. Now, we rank higher and sell more."
-                    </p>
-                    <p class="author">– Michael T.</p>
-                    <p class="role"> Fitness Gear Entrepreneur
-                    </p>
-                </div>
-            </div>
+      <div class="container text-center">
+        <h2 class="font-weight-700">
+          Success Stories from <span>Shopify Migrants</span>
+        </h2>
+        <div class="heading-line"></div>
+        <p>
+          Slide through testimonials from happy business owners who made the
+          switch:
+        </p>
+        <div class="testimonials-grid">
+          <div class="testimonial-card-large">
+            <p>
+              "Switching from Shopify to ZetupStore slashed our monthly costs
+              and gave us complete control over our store. Best decision we
+              made!"
+            </p>
+            <p class="author">– Alex R.</p>
+            <p class="role">Home Decor Brand Owner</p>
+          </div>
+          <div class="testimonial-card-large">
+            <p>
+              "The migration was smooth, the site is faster, and our sales have
+              improved without transaction cuts!"
+            </p>
+            <p class="author">– Priya S.</p>
+            <p class="role">Fashion Boutique Founder</p>
+          </div>
+          <div class="testimonial-card-large last-testimonial-card">
+            <p>
+              "ZetupStore gave us the SEO flexibility Shopify never could. Now,
+              we rank higher and sell more."
+            </p>
+            <p class="author">– Michael T.</p>
+            <p class="role">Fitness Gear Entrepreneur</p>
+          </div>
         </div>
+      </div>
     </section>
-
-
 
     <!-- FAQ + Video Section Start -->
     <section class="faq-video-section pad-90 bg-light">
-        <div class="container">
-            <div class="heading-sec-container mb-40">
-                <div class="row">
-                    <div class="col-xl-12 text-center">
-                        <h2 class="font-weight-700">Frequently Asked
-                            <span>Questions</span>
-                        </h2>
-                        <div class="heading-line"></div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="heading-sec-container mb-40">
+          <div class="row">
+            <div class="col-xl-12 text-center">
+              <h2 class="font-weight-700">
+                Frequently Asked
+                <span>Questions</span>
+              </h2>
+              <div class="heading-line"></div>
             </div>
-
-            <div class="row">
-                <!-- FAQ Left Side -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="accordion" id="faqAccordion">
-                        <!-- FAQ 1 -->
-                        <div class="accordion-item fade-in-left">
-                            <h2 class="accordion-header" id="faqHeadingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faqCollapseOne" aria-expanded="true"
-                                    aria-controls="faqCollapseOne">
-                                    Is the migration from Shopify to ZetupStore really free?
-                                </button>
-                            </h2>
-                            <div id="faqCollapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Yes! You can migrate your store data (products, customers, orders) to ZetupStore for
-                                    free. We also offer a free plan to help you get started without upfront costs.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 2 -->
-                        <div class="accordion-item fade-in-left" style="animation-delay:0.1s;">
-                            <h2 class="accordion-header" id="faqHeadingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faqCollapseTwo" aria-expanded="false"
-                                    aria-controls="faqCollapseTwo">
-                                    Will my store experience downtime during migration?
-                                </button>
-                            </h2>
-                            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    No, your Shopify store stays live during the migration process. Once you’re ready,
-                                    you can launch your ZetupStore site smoothly without interrupting your sales.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 3 -->
-                        <div class="accordion-item fade-in-left" style="animation-delay:0.2s;">
-                            <h2 class="accordion-header" id="faqHeadingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faqCollapseThree" aria-expanded="false"
-                                    aria-controls="faqCollapseThree">
-                                    What data can I transfer from Shopify to ZetupStore?
-                                </button>
-                            </h2>
-                            <div id="faqCollapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    You can transfer:<br>
-                                    - Products (including variants and images)<br>
-                                    - Customer data<br>
-                                    - Order history<br>
-                                    - Categories and collections
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 4 -->
-                        <div class="accordion-item fade-in-left" style="animation-delay:0.3s;">
-                            <h2 class="accordion-header" id="faqHeadingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faqCollapseFour" aria-expanded="false"
-                                    aria-controls="faqCollapseFour">
-                                    Do I need technical skills or a developer to migrate?
-                                </button>
-                            </h2>
-                            <div id="faqCollapseFour" class="accordion-collapse collapse"
-                                aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Not at all! ZetupStore’s migration tool is designed for non-technical users. Just
-                                    follow our step-by-step wizard, and you’ll be ready to launch — no coding or
-                                    developers required.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 5 -->
-                        <div class="accordion-item fade-in-left" style="animation-delay:0.4s;">
-                            <h2 class="accordion-header" id="faqHeadingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faqCollapseFive" aria-expanded="false"
-                                    aria-controls="faqCollapseFive">
-                                    Can I customize my store after migration?
-                                </button>
-                            </h2>
-                            <div id="faqCollapseFive" class="accordion-collapse collapse"
-                                aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Absolutely. ZetupStore gives you full design control with customizable themes,
-                                    layout options, and drag-and-drop editing — all without needing extra apps or paid
-                                    plugins.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ Right Side -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="accordion" id="faqAccordion2">
-                        <!-- FAQ 6 -->
-                        <div class="accordion-item fade-in-left" style="animation-delay:0.5s;">
-                            <h2 class="accordion-header" id="faqHeadingSix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faqCollapseSix" aria-expanded="false"
-                                    aria-controls="faqCollapseSix">
-                                    What happens to my Shopify subscription after I migrate?
-                                </button>
-                            </h2>
-                            <div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqHeadingSix"
-                                data-bs-parent="#faqAccordion2">
-                                <div class="accordion-body">
-                                    Once you’ve successfully migrated and tested your ZetupStore site, you can cancel
-                                    your Shopify subscription at any time. We recommend keeping Shopify active during
-                                    the migration for a smooth transition.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 7 -->
-                        <div class="accordion-item fade-in-left" style="animation-delay:0.6s;">
-                            <h2 class="accordion-header" id="faqHeadingSeven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faqCollapseSeven" aria-expanded="false"
-                                    aria-controls="faqCollapseSeven">
-                                    Will my SEO rankings be affected after migrating?
-                                </button>
-                            </h2>
-                            <div id="faqCollapseSeven" class="accordion-collapse collapse"
-                                aria-labelledby="faqHeadingSeven" data-bs-parent="#faqAccordion2">
-                                <div class="accordion-body">
-                                    ZetupStore is SEO-optimized out of the box. We also provide tools and guides to help
-                                    you maintain or even improve your search rankings after the switch.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 8 -->
-                        <div class="accordion-item fade-in-left" style="animation-delay:0.7s;">
-                            <h2 class="accordion-header" id="faqHeadingEight">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faqCollapseEight" aria-expanded="false"
-                                    aria-controls="faqCollapseEight">
-                                    What support is available during migration?
-                                </button>
-                            </h2>
-                            <div id="faqCollapseEight" class="accordion-collapse collapse"
-                                aria-labelledby="faqHeadingEight" data-bs-parent="#faqAccordion2">
-                                <div class="accordion-body">
-                                    We offer:<br>
-                                    - Step-by-step migration guides<br>
-                                    - WhatsApp and email support<br>
-                                    - Help center articles<br>
-                                    - Dedicated support for premium plans
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 9 -->
-                        <div class="accordion-item fade-in-left" style="animation-delay:0.8s;">
-                            <h2 class="accordion-header" id="faqHeadingNine">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faqCollapseNine" aria-expanded="false"
-                                    aria-controls="faqCollapseNine">
-                                    Can I test ZetupStore before fully switching?
-                                </button>
-                            </h2>
-                            <div id="faqCollapseNine" class="accordion-collapse collapse"
-                                aria-labelledby="faqHeadingNine" data-bs-parent="#faqAccordion2">
-                                <div class="accordion-body">
-                                    Yes! You can set up a test store on ZetupStore to explore its features and
-                                    performance before committing to a full migration.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 10 -->
-                        <div class="accordion-item fade-in-left" style="animation-delay:0.9s;">
-                            <h2 class="accordion-header" id="faqHeadingTen">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faqCollapseTen" aria-expanded="false"
-                                    aria-controls="faqCollapseTen">
-                                    What makes ZetupStore better than Shopify?
-                                </button>
-                            </h2>
-                            <div id="faqCollapseTen" class="accordion-collapse collapse" aria-labelledby="faqHeadingTen"
-                                data-bs-parent="#faqAccordion2">
-                                <div class="accordion-body">
-                                    With ZetupStore, you get:<br>
-                                    - Zero transaction fees<br>
-                                    - Lower ongoing costs<br>
-                                    - Full customization freedom<br>
-                                    - Faster site speeds and stronger SEO<br>
-                                    - Plugin-free setup
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <div class="row">
+          <!-- FAQ Left Side -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="accordion" id="faqAccordion">
+              <!-- FAQ 1 -->
+              <div class="accordion-item fade-in-left">
+                <h2 class="accordion-header" id="faqHeadingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseOne"
+                    aria-expanded="true"
+                    aria-controls="faqCollapseOne"
+                  >
+                    Is the migration from Shopify to ZetupStore really free?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="faqHeadingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes! You can migrate your store data (products, customers,
+                    orders) to ZetupStore for free. We also offer a free plan to
+                    help you get started without upfront costs.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div
+                class="accordion-item fade-in-left"
+                style="animation-delay: 0.1s"
+              >
+                <h2 class="accordion-header" id="faqHeadingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseTwo"
+                    aria-expanded="false"
+                    aria-controls="faqCollapseTwo"
+                  >
+                    Will my store experience downtime during migration?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    No, your Shopify store stays live during the migration
+                    process. Once you’re ready, you can launch your ZetupStore
+                    site smoothly without interrupting your sales.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div
+                class="accordion-item fade-in-left"
+                style="animation-delay: 0.2s"
+              >
+                <h2 class="accordion-header" id="faqHeadingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseThree"
+                    aria-expanded="false"
+                    aria-controls="faqCollapseThree"
+                  >
+                    What data can I transfer from Shopify to ZetupStore?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    You can transfer:<br />
+                    - Products (including variants and images)<br />
+                    - Customer data<br />
+                    - Order history<br />
+                    - Categories and collections
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div
+                class="accordion-item fade-in-left"
+                style="animation-delay: 0.3s"
+              >
+                <h2 class="accordion-header" id="faqHeadingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseFour"
+                    aria-expanded="false"
+                    aria-controls="faqCollapseFour"
+                  >
+                    Do I need technical skills or a developer to migrate?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingFour"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Not at all! ZetupStore’s migration tool is designed for
+                    non-technical users. Just follow our step-by-step wizard,
+                    and you’ll be ready to launch — no coding or developers
+                    required.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 5 -->
+              <div
+                class="accordion-item fade-in-left"
+                style="animation-delay: 0.4s"
+              >
+                <h2 class="accordion-header" id="faqHeadingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseFive"
+                    aria-expanded="false"
+                    aria-controls="faqCollapseFive"
+                  >
+                    Can I customize my store after migration?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingFive"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Absolutely. ZetupStore gives you full design control with
+                    customizable themes, layout options, and drag-and-drop
+                    editing — all without needing extra apps or paid plugins.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Right Side -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="accordion" id="faqAccordion2">
+              <!-- FAQ 6 -->
+              <div
+                class="accordion-item fade-in-left"
+                style="animation-delay: 0.5s"
+              >
+                <h2 class="accordion-header" id="faqHeadingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseSix"
+                    aria-expanded="false"
+                    aria-controls="faqCollapseSix"
+                  >
+                    What happens to my Shopify subscription after I migrate?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingSix"
+                  data-bs-parent="#faqAccordion2"
+                >
+                  <div class="accordion-body">
+                    Once you’ve successfully migrated and tested your ZetupStore
+                    site, you can cancel your Shopify subscription at any time.
+                    We recommend keeping Shopify active during the migration for
+                    a smooth transition.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 7 -->
+              <div
+                class="accordion-item fade-in-left"
+                style="animation-delay: 0.6s"
+              >
+                <h2 class="accordion-header" id="faqHeadingSeven">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseSeven"
+                    aria-expanded="false"
+                    aria-controls="faqCollapseSeven"
+                  >
+                    Will my SEO rankings be affected after migrating?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingSeven"
+                  data-bs-parent="#faqAccordion2"
+                >
+                  <div class="accordion-body">
+                    ZetupStore is SEO-optimized out of the box. We also provide
+                    tools and guides to help you maintain or even improve your
+                    search rankings after the switch.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 8 -->
+              <div
+                class="accordion-item fade-in-left"
+                style="animation-delay: 0.7s"
+              >
+                <h2 class="accordion-header" id="faqHeadingEight">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseEight"
+                    aria-expanded="false"
+                    aria-controls="faqCollapseEight"
+                  >
+                    What support is available during migration?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapseEight"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingEight"
+                  data-bs-parent="#faqAccordion2"
+                >
+                  <div class="accordion-body">
+                    We offer:<br />
+                    - Step-by-step migration guides<br />
+                    - WhatsApp and email support<br />
+                    - Help center articles<br />
+                    - Dedicated support for premium plans
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 9 -->
+              <div
+                class="accordion-item fade-in-left"
+                style="animation-delay: 0.8s"
+              >
+                <h2 class="accordion-header" id="faqHeadingNine">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseNine"
+                    aria-expanded="false"
+                    aria-controls="faqCollapseNine"
+                  >
+                    Can I test ZetupStore before fully switching?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapseNine"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingNine"
+                  data-bs-parent="#faqAccordion2"
+                >
+                  <div class="accordion-body">
+                    Yes! You can set up a test store on ZetupStore to explore
+                    its features and performance before committing to a full
+                    migration.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 10 -->
+              <div
+                class="accordion-item fade-in-left"
+                style="animation-delay: 0.9s"
+              >
+                <h2 class="accordion-header" id="faqHeadingTen">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseTen"
+                    aria-expanded="false"
+                    aria-controls="faqCollapseTen"
+                  >
+                    What makes ZetupStore better than Shopify?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapseTen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeadingTen"
+                  data-bs-parent="#faqAccordion2"
+                >
+                  <div class="accordion-body">
+                    With ZetupStore, you get:<br />
+                    - Zero transaction fees<br />
+                    - Lower ongoing costs<br />
+                    - Full customization freedom<br />
+                    - Faster site speeds and stronger SEO<br />
+                    - Plugin-free setup
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- FAQ + Video Section End -->
 
-
-
     <!-- CTA Section with Background -->
-    <section class="cta-section-large pad-90 ">
-        <div class="container">
-            <div class="cta-content text-center">
-                <h2>Ready to Migrate?</h2>
-                <p>Join thousands of businesses switching from Shopify! <br />
-                    Take control of your store, cut unnecessary costs, and unlock full customization today.
-                </p>
-                <a href="#contact-form" class="btn btn-primary btn-lg">Start Migration Now</a>
-            </div>
+    <section class="cta-section-large pad-90">
+      <div class="container">
+        <div class="cta-content text-center">
+          <h2>Ready to Migrate?</h2>
+          <p>
+            Join thousands of businesses switching from Shopify! <br />
+            Take control of your store, cut unnecessary costs, and unlock full
+            customization today.
+          </p>
+          <a href="#contact-form" class="btn btn-primary btn-lg"
+            >Start Migration Now</a
+          >
         </div>
+      </div>
     </section>
 
     <!-- Contact Form Section with Cards -->
-    <section id="contact-form" class="contact-form-section bg-white pad-90 ">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form-card">
-                        <h2 class="text-center mb-4">Start Your Migration Journey</h2>
-                        <form id="migrationForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="tel" class="form-control" placeholder="Your Phone">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder=" Company Name"
-                                        name="company_name" id="companyName">
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="Your Store URL" required>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control" rows="4"
-                                        placeholder="Additional Information"></textarea>
-                                </div>
-                                <div class="col-4">
-                                    <button type="submit" class="btn btn-primary w-100">Start Migration</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <section id="contact-form" class="contact-form-section bg-white pad-90">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-form-card">
+              <h2 class="text-center mb-4">Start Your Migration Journey</h2>
+              <form id="migrationForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Your Phone"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder=" Company Name"
+                      name="company_name"
+                      id="companyName"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Store URL"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control"
+                      rows="4"
+                      placeholder="Additional Information"
+                    ></textarea>
+                  </div>
+                  <div class="col-4">
+                    <button type="submit" class="btn btn-primary w-100">
+                      Start Migration
+                    </button>
+                  </div>
                 </div>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- WhatsApp link -->
-    <a href="https://api.whatsapp.com/send?phone=919462908999&text=Hello%2C%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20please%20provide%20more%20details%3F%20Thank%20you!"
-        target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
-        <img src="images/whattshap-icon.svg" alt="whatsapp chat" />
+    <a
+      href="https://api.whatsapp.com/send?phone=919462908999&text=Hello%2C%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20please%20provide%20more%20details%3F%20Thank%20you!"
+      target="_blank"
+      class="btn-whatsapp-pulse btn-whatsapp-pulse-border"
+    >
+      <img src="images/whattshap-icon.svg" alt="whatsapp chat" />
     </a>
     <!-- and -->
 
     <!-- footer -->
     <div class="footer linear-gradient-3 position-relative pt-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-sm-12 col-12">
-                    <div class="footer-logo">
-                        <img src="images/footer-logo.png" alt="logo">
-                    </div>
-                    <p class="footer-content">
-                        ZetupStore — A fully scalable eCommerce platform giving you unlimited flexibility to grow,
-                        adapt, and expand your online store with no limits.
-                    </p>
-                    <div class="contact-main">
-                        <!-- <div class="contact-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-sm-12 col-12">
+            <div class="footer-logo">
+              <img src="images/footer-logo.png" alt="logo" />
+            </div>
+            <p class="footer-content">
+              ZetupStore — A fully scalable eCommerce platform giving you
+              unlimited flexibility to grow, adapt, and expand your online store
+              with no limits.
+            </p>
+            <div class="contact-main">
+              <!-- <div class="contact-sec">
                                 <div class="contact-icon">
                                     <img src="images/telephone.png"
                                         alt="telephone">
@@ -664,238 +938,306 @@
                                         href="tel:9563434234">91+
                                         9563434234</a></div>
                             </div> -->
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-4 col-12">
+            <div class="footer-heading">
+              <h5 class="font-weight-600">Quick Links</h5>
+            </div>
+            <div class="footer-link">
+              <ul>
+                <li>
+                  <a href="about-us.html">
+                    <div class="footer-line"></div>
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="price.html">
+                    <div class="footer-line"></div>
+                    Pricing
+                  </a>
+                </li>
 
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-4 col-12">
-                    <div class="footer-heading">
-                        <h5 class="font-weight-600">Quick Links</h5>
-                    </div>
-                    <div class="footer-link">
-                        <ul>
-                            <li>
-                                <a href="about-us.html">
-                                    <div class="footer-line"></div> About Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="price.html">
-                                    <div class="footer-line"></div> Pricing
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="privacy-policy.html">
-                                    <div class="footer-line"></div> Privacy Policy
-                                </a>
-                            </li>
-                            <!-- <li>
+                <li>
+                  <a href="privacy-policy.html">
+                    <div class="footer-line"></div>
+                    Privacy Policy
+                  </a>
+                </li>
+                <!-- <li>
                                 <a href="#">
                                     <div class="footer-line"></div> Blog
                                 </a>
                             </li> -->
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-4 col-12">
-                    <div class="footer-heading">
-                        <h5 class="font-weight-600">Support & Help</h5>
-                    </div>
-                    <div class="footer-link">
-                        <ul>
-                            <li>
-                                <a href="faq.html">
-                                    <div class="footer-line"></div>FAQs
-                                </a>
-                            </li>
-                            <li>
-                                <a href="contact-us.html">
-                                    <div class="footer-line"></div>Contact Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="terms-condition.html">
-                                    <div class="footer-line"></div>
-                                    Terms & Conditions
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-sm-4 col-12">
-                    <div class="footer-heading">
-                        <h5 class="font-weight-600">Social Media</h5>
-                    </div>
-                    <div class="footer-link">
-                        <ul>
-                            <li>
-                                <div class="contact-sec">
-                                    <div class="contact-icon">
-                                        <img src="images/mail.png" alt="telephone">
-                                    </div>
-                                    <div class="contact-des"><a
-                                            href="mailto:support@zetupstore.com">support@zetupstore.com</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="footer-social">
-                                    <div class="icon-box">
-                                        <a href="https://www.linkedin.com/company/zetupstore" target="_blank">
-                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
-                                                viewBox="0 0 176 176" style="enable-background:new 0 0 512 512"
-                                                xml:space="preserve" class="">
-                                                <g>
-                                                    <g data-name="Layer 2">
-                                                        <rect width="176" height="176" fill="#0077b5" rx="24"
-                                                            opacity="1" data-original="#0077b5" class=""></rect>
-                                                        <g fill="#fff">
-                                                            <path
-                                                                d="M63.4 48a15 15 0 1 1-15-15 15 15 0 0 1 15 15zM60 73v66.27a3.71 3.71 0 0 1-3.71 3.73H40.48a3.71 3.71 0 0 1-3.72-3.72V73a3.72 3.72 0 0 1 3.72-3.72h15.81A3.72 3.72 0 0 1 60 73zM142.64 107.5v32.08a3.41 3.41 0 0 1-3.42 3.42h-17a3.41 3.41 0 0 1-3.42-3.42v-31.09c0-4.64 1.36-20.32-12.13-20.32-10.45 0-12.58 10.73-13 15.55v35.86A3.42 3.42 0 0 1 90.3 143H73.88a3.41 3.41 0 0 1-3.41-3.42V72.71a3.41 3.41 0 0 1 3.41-3.42H90.3a3.42 3.42 0 0 1 3.42 3.42v5.78c3.88-5.82 9.63-10.31 21.9-10.31 27.18 0 27.02 25.38 27.02 39.32z"
-                                                                fill="#ffffff" opacity="1" data-original="#ffffff">
-                                                            </path>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="icon-box">
-                                        <a href="https://www.instagram.com/zetup.store" target="_blank">
-                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
-                                                viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 512 512"
-                                                xml:space="preserve" class="">
-                                                <g>
-                                                    <linearGradient id="a" x1="275.517" x2="275.517" y1="4.57"
-                                                        y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"
-                                                        gradientUnits="userSpaceOnUse">
-                                                        <stop offset="0" style="stop-color:#E09B3D"
-                                                            stop-color="#e09b3d"></stop>
-                                                        <stop offset=".3" style="stop-color:#C74C4D"
-                                                            stop-color="#c74c4d"></stop>
-                                                        <stop offset=".6" style="stop-color:#C21975"
-                                                            stop-color="#c21975"></stop>
-                                                        <stop offset="1" style="stop-color:#7024C4"
-                                                            stop-color="#7024c4"></stop>
-                                                    </linearGradient>
-                                                    <path
-                                                        d="M386.878 0H164.156C73.64 0 0 73.64 0 164.156v222.722c0 90.516 73.64 164.156 164.156 164.156h222.722c90.516 0 164.156-73.64 164.156-164.156V164.156C551.033 73.64 477.393 0 386.878 0zM495.6 386.878c0 60.045-48.677 108.722-108.722 108.722H164.156c-60.045 0-108.722-48.677-108.722-108.722V164.156c0-60.046 48.677-108.722 108.722-108.722h222.722c60.045 0 108.722 48.676 108.722 108.722v222.722z"
-                                                        style="fill:url(#a)" fill=""></path>
-                                                    <linearGradient id="b" x1="275.517" x2="275.517" y1="4.57"
-                                                        y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)"
-                                                        gradientUnits="userSpaceOnUse">
-                                                        <stop offset="0" style="stop-color:#E09B3D"
-                                                            stop-color="#e09b3d"></stop>
-                                                        <stop offset=".3" style="stop-color:#C74C4D"
-                                                            stop-color="#c74c4d"></stop>
-                                                        <stop offset=".6" style="stop-color:#C21975"
-                                                            stop-color="#c21975"></stop>
-                                                        <stop offset="1" style="stop-color:#7024C4"
-                                                            stop-color="#7024c4"></stop>
-                                                    </linearGradient>
-                                                    <path
-                                                        d="M275.517 133C196.933 133 133 196.933 133 275.516s63.933 142.517 142.517 142.517S418.034 354.1 418.034 275.516 354.101 133 275.517 133zm0 229.6c-48.095 0-87.083-38.988-87.083-87.083s38.989-87.083 87.083-87.083c48.095 0 87.083 38.988 87.083 87.083 0 48.094-38.989 87.083-87.083 87.083z"
-                                                        style="fill:url(#b)" fill=""></path>
-                                                    <linearGradient id="c" x1="418.31" x2="418.31" y1="4.57" y2="549.72"
-                                                        gradientTransform="matrix(1 0 0 -1 0 554)"
-                                                        gradientUnits="userSpaceOnUse">
-                                                        <stop offset="0" style="stop-color:#E09B3D"
-                                                            stop-color="#e09b3d"></stop>
-                                                        <stop offset=".3" style="stop-color:#C74C4D"
-                                                            stop-color="#c74c4d"></stop>
-                                                        <stop offset=".6" style="stop-color:#C21975"
-                                                            stop-color="#c21975"></stop>
-                                                        <stop offset="1" style="stop-color:#7024C4"
-                                                            stop-color="#7024c4"></stop>
-                                                    </linearGradient>
-                                                    <circle cx="418.31" cy="134.07" r="34.15" style="fill:url(#c)"
-                                                        fill=""></circle>
-                                                </g>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="icon-box">
-                                        <a href="https://www.facebook.com/zetupstore" target="_blank">
-                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
-                                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
-                                                xml:space="preserve" class="">
-                                                <g>
-                                                    <path
-                                                        d="M448 0H64C28.704 0 0 28.704 0 64v384c0 35.296 28.704 64 64 64h384c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z"
-                                                        style="" fill="#1976d2" data-original="#1976d2" class=""></path>
-                                                    <path
-                                                        d="M432 256h-80v-64c0-17.664 14.336-16 32-16h32V96h-64c-53.024 0-96 42.976-96 96v64h-64v80h64v176h96V336h48l32-80z"
-                                                        style="" fill="#fafafa" data-original="#fafafa" class=""></path>
-                                                </g>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+              </ul>
             </div>
-        </div>
-        <div class="container">
-            <div class="copyright text-center">
-                © Copyright Reserved by Zetupstore
+          </div>
+          <div class="col-xl-3 col-sm-4 col-12">
+            <div class="footer-heading">
+              <h5 class="font-weight-600">Support & Help</h5>
             </div>
+            <div class="footer-link">
+              <ul>
+                <li>
+                  <a href="faq.html">
+                    <div class="footer-line"></div>
+                    FAQs
+                  </a>
+                </li>
+                <li>
+                  <a href="contact-us.html">
+                    <div class="footer-line"></div>
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a href="terms-condition.html">
+                    <div class="footer-line"></div>
+                    Terms & Conditions
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-4 col-12">
+            <div class="footer-heading">
+              <h5 class="font-weight-600">Social Media</h5>
+            </div>
+            <div class="footer-link">
+              <ul>
+                <li>
+                  <div class="contact-sec">
+                    <div class="contact-icon">
+                      <img src="images/mail.png" alt="telephone" />
+                    </div>
+                    <div class="contact-des">
+                      <a href="mailto:support@zetupstore.com"
+                        >support@zetupstore.com</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="footer-social">
+                    <div class="icon-box">
+                      <a
+                        href="https://www.linkedin.com/company/zetupstore"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 176 176"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <g data-name="Layer 2">
+                              <rect
+                                width="176"
+                                height="176"
+                                fill="#0077b5"
+                                rx="24"
+                                opacity="1"
+                                data-original="#0077b5"
+                                class=""
+                              ></rect>
+                              <g fill="#fff">
+                                <path
+                                  d="M63.4 48a15 15 0 1 1-15-15 15 15 0 0 1 15 15zM60 73v66.27a3.71 3.71 0 0 1-3.71 3.73H40.48a3.71 3.71 0 0 1-3.72-3.72V73a3.72 3.72 0 0 1 3.72-3.72h15.81A3.72 3.72 0 0 1 60 73zM142.64 107.5v32.08a3.41 3.41 0 0 1-3.42 3.42h-17a3.41 3.41 0 0 1-3.42-3.42v-31.09c0-4.64 1.36-20.32-12.13-20.32-10.45 0-12.58 10.73-13 15.55v35.86A3.42 3.42 0 0 1 90.3 143H73.88a3.41 3.41 0 0 1-3.41-3.42V72.71a3.41 3.41 0 0 1 3.41-3.42H90.3a3.42 3.42 0 0 1 3.42 3.42v5.78c3.88-5.82 9.63-10.31 21.9-10.31 27.18 0 27.02 25.38 27.02 39.32z"
+                                  fill="#ffffff"
+                                  opacity="1"
+                                  data-original="#ffffff"
+                                ></path>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="icon-box">
+                      <a
+                        href="https://www.instagram.com/zetup.store"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 551.034 551.034"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <linearGradient
+                              id="a"
+                              x1="275.517"
+                              x2="275.517"
+                              y1="4.57"
+                              y2="549.72"
+                              gradientTransform="matrix(1 0 0 -1 0 554)"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop
+                                offset="0"
+                                style="stop-color: #e09b3d"
+                                stop-color="#e09b3d"
+                              ></stop>
+                              <stop
+                                offset=".3"
+                                style="stop-color: #c74c4d"
+                                stop-color="#c74c4d"
+                              ></stop>
+                              <stop
+                                offset=".6"
+                                style="stop-color: #c21975"
+                                stop-color="#c21975"
+                              ></stop>
+                              <stop
+                                offset="1"
+                                style="stop-color: #7024c4"
+                                stop-color="#7024c4"
+                              ></stop>
+                            </linearGradient>
+                            <path
+                              d="M386.878 0H164.156C73.64 0 0 73.64 0 164.156v222.722c0 90.516 73.64 164.156 164.156 164.156h222.722c90.516 0 164.156-73.64 164.156-164.156V164.156C551.033 73.64 477.393 0 386.878 0zM495.6 386.878c0 60.045-48.677 108.722-108.722 108.722H164.156c-60.045 0-108.722-48.677-108.722-108.722V164.156c0-60.046 48.677-108.722 108.722-108.722h222.722c60.045 0 108.722 48.676 108.722 108.722v222.722z"
+                              style="fill: url(#a)"
+                              fill=""
+                            ></path>
+                            <linearGradient
+                              id="b"
+                              x1="275.517"
+                              x2="275.517"
+                              y1="4.57"
+                              y2="549.72"
+                              gradientTransform="matrix(1 0 0 -1 0 554)"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop
+                                offset="0"
+                                style="stop-color: #e09b3d"
+                                stop-color="#e09b3d"
+                              ></stop>
+                              <stop
+                                offset=".3"
+                                style="stop-color: #c74c4d"
+                                stop-color="#c74c4d"
+                              ></stop>
+                              <stop
+                                offset=".6"
+                                style="stop-color: #c21975"
+                                stop-color="#c21975"
+                              ></stop>
+                              <stop
+                                offset="1"
+                                style="stop-color: #7024c4"
+                                stop-color="#7024c4"
+                              ></stop>
+                            </linearGradient>
+                            <path
+                              d="M275.517 133C196.933 133 133 196.933 133 275.516s63.933 142.517 142.517 142.517S418.034 354.1 418.034 275.516 354.101 133 275.517 133zm0 229.6c-48.095 0-87.083-38.988-87.083-87.083s38.989-87.083 87.083-87.083c48.095 0 87.083 38.988 87.083 87.083 0 48.094-38.989 87.083-87.083 87.083z"
+                              style="fill: url(#b)"
+                              fill=""
+                            ></path>
+                            <linearGradient
+                              id="c"
+                              x1="418.31"
+                              x2="418.31"
+                              y1="4.57"
+                              y2="549.72"
+                              gradientTransform="matrix(1 0 0 -1 0 554)"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop
+                                offset="0"
+                                style="stop-color: #e09b3d"
+                                stop-color="#e09b3d"
+                              ></stop>
+                              <stop
+                                offset=".3"
+                                style="stop-color: #c74c4d"
+                                stop-color="#c74c4d"
+                              ></stop>
+                              <stop
+                                offset=".6"
+                                style="stop-color: #c21975"
+                                stop-color="#c21975"
+                              ></stop>
+                              <stop
+                                offset="1"
+                                style="stop-color: #7024c4"
+                                stop-color="#7024c4"
+                              ></stop>
+                            </linearGradient>
+                            <circle
+                              cx="418.31"
+                              cy="134.07"
+                              r="34.15"
+                              style="fill: url(#c)"
+                              fill=""
+                            ></circle>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="icon-box">
+                      <a
+                        href="https://www.facebook.com/zetupstore"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 512 512"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="M448 0H64C28.704 0 0 28.704 0 64v384c0 35.296 28.704 64 64 64h384c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z"
+                              style=""
+                              fill="#1976d2"
+                              data-original="#1976d2"
+                              class=""
+                            ></path>
+                            <path
+                              d="M432 256h-80v-64c0-17.664 14.336-16 32-16h32V96h-64c-53.024 0-96 42.976-96 96v64h-64v80h64v176h96V336h48l32-80z"
+                              style=""
+                              fill="#fafafa"
+                              data-original="#fafafa"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="copyright text-center">
+          © Copyright Reserved by Zetupstore
+        </div>
+      </div>
     </div>
     <!-- footer End -->
-    <div class="enquiry-form">
-        <div class="enquiry-form-container">
-            <div class="cross-btn">
-                <img src="images/cross.svg" alt="close">
-            </div>
-            <form>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <h4 class="mb-30 font-weight-600">Submit Your
-                            Enquiry</h4>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="text" class="form-control" placeholder="Your Name*" name="name" id="inputName">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="text" class="form-control" placeholder=" Company Name" name="company_name"
-                                id="companyName">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="email" class="form-control" placeholder="Email*" name="email" id="Email">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="text" class="form-control pincode" placeholder="Phone" name="phone" id="phone">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <textarea type="number" class="form-control" placeholder="Message" name="message"
-                                id="message"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <button type="submit" class="btn btn-primary basicbtn">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="btn btn-primary enquiry-btn">
-            <img src="images/cond.png" alt="enquiry">
-        </div>
-    </div>
+    <div id="enquiry-form-section"></div>
     <!-- end -->
     <!-- script -->
     <script src="js/jquery.min.js"></script>
@@ -906,6 +1248,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+    <script src="js/enquiry-form.js"></script>
+  </body>
 </html>
