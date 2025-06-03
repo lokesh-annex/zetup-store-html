@@ -72,7 +72,16 @@ document.addEventListener("DOMContentLoaded", function () {
                   </div>
                 </div>
               </form>
-               <div class="d-none" id="migration-thank-you-message">Thank you</div>
+               <div class="d-none thank-you-container" id="migration-thank-you-message">
+         <div class="thank-you-content">
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+        </svg>
+        <h3 class="thank-you-title">Thank You!</h3>
+        <p class="thank-you-text">We've received your enquiry and will get back to you shortly.</p>
+        </div>
+      </div>
             </div>
   `;
 });
@@ -103,18 +112,20 @@ document.addEventListener("DOMContentLoaded", function () {
       try {
         submitBtn.disabled = true;
         submitBtn.innerHTML = "Submitting...";
-        await submitForm("migration");
+           await submitForm("migration");
+        success.classList.remove("d-none");
         success.classList.add("d-block");
         form.classList.add("d-none");
       } catch (err) {
-        console.error("Enquiry failed.");
+        console.error("migration failed.");
       } finally {
+         form.reset();
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnText;
         setTimeout(() => {
           success.classList.add("d-none");
           form.classList.remove("d-none");
-          form.reset();
+         
           inputs.forEach((input) => {
             input.classList.remove("is-valid", "validate-me");
           });

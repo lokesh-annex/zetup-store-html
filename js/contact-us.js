@@ -24,18 +24,20 @@ document.addEventListener("DOMContentLoaded", function () {
       try {
         submitBtn.disabled = true;
         submitBtn.innerHTML = "Submitting...";
-        await submitForm("contact-us");
+      await submitForm("contact-us");
+        success.classList.remove("d-none");
         success.classList.add("d-block");
         form.classList.add("d-none");
       } catch (err) {
-        console.error("contact us failed. ", err);
+        console.error("contact-us failed.");
       } finally {
+         form.reset();
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnText;
         setTimeout(() => {
           success.classList.add("d-none");
           form.classList.remove("d-none");
-          form.reset();
+         
           inputs.forEach((input) => {
             input.classList.remove("is-valid", "validate-me");
           });
