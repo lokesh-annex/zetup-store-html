@@ -58,13 +58,15 @@ export function getAllFormFields(form) {
 export async function submitForm(wherefrom) {
   const formData = {
     name: document.getElementById("inputName").value,
-    company_name: document.getElementById("companyName").value,
+    company_name: document.getElementById("companyName")?.value,
     email: document.getElementById("Email").value,
     phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value,
-    store_url: document.getElementById("storeUrl").value,
+    message: document.getElementById("message")?.value,
+    store_url: document.getElementById("storeUrl")?.value,
     where_from: wherefrom ?? "enquiry",
   };
+
+  console.log("line 69 -------------> ", formData);
 
   try {
     const response = await fetch("https://dev.zetupstore.com/api/enquiry", {
