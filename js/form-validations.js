@@ -17,9 +17,13 @@ function validateField(field) {
   }
 
   if (field.id === "phone" && field.value) {
-    field.classList.add("is-invalid");
-    field.classList.remove("is-valid");
-    return false;
+    const cleanedPhone = field.value.replace(/\D/g, "");
+
+    // Validate phone length (adjust as needed)
+    if (cleanedPhone.length < 8 || cleanedPhone.length > 15) {
+      field.classList.add("is-invalid");
+      return false;
+    }
   }
 
   if (field.value) {
