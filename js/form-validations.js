@@ -52,3 +52,39 @@ function getAllFormFields(form) {
 
   return inputs;
 }
+
+// Form submission function
+async function submitForm() {
+  const formData = {
+    name: document.getElementById("inputName").value,
+    company_name: document.getElementById("companyName").value,
+    email: document.getElementById("Email").value,
+    phone: document.getElementById("phone").value,
+    message: document.getElementById("message").value,
+  };
+
+  try {
+    const response = await fetch("YOUR_API_ENDPOINT", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (!response.ok) throw new Error("Submission failed");
+
+    alert("Thank you! Your enquiry has been submitted.");
+    form.reset();
+    inputs.forEach((input) => {
+      input.classList.remove("is-valid", "validate-me");
+    });
+  } catch (error) {
+    console.error("Error:", error);
+    alert("There was an error submitting your form. Please try again.");
+  }
+}
+
+function handleContactForApi(form) {
+  const inputs = getAllFormFields(form);
+}
