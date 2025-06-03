@@ -50,7 +50,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="sticky-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg ">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <img src="images/logo.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -288,8 +288,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     </div>
                     <div class="col-xl-8 col-lg-8 col-12">
-                        <form action method="post"
-                            class="contact-form-style-03">
+                        <div  class="contact-form-style-03">
+                        <form novalidate method="post" id="contactForm" 
+                           >
 
                             <h3>How we can help you?</h3>
                             <div class="row justify-content-center">
@@ -323,9 +324,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         opacity="1"
                                                         data-original="#000000"
                                                         class></path></g></svg></span>
-                                        <input class="form-control required"
-                                            id="simple" type="text" name="name"
+                                        <input class="form-control required" required
+                                            id="inputName" type="text" name="name"
                                             placeholder="What's your good name?">
+                                            <div class="invalid-feedback">Please enter your full name</div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 pr-0">
@@ -334,9 +336,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div
                                         class="position-relative form-group mb-25px">
                                         <span class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 128 128" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><path d="M93 5.25H35A5.757 5.757 0 0 0 29.25 11v106a5.757 5.757 0 0 0 5.75 5.75h58a5.757 5.757 0 0 0 5.75-5.75V11A5.757 5.757 0 0 0 93 5.25zm-16.934 3.5-.649 6.5H52.583l-.649-6.5zM95.25 117a2.253 2.253 0 0 1-2.25 2.25H35a2.253 2.253 0 0 1-2.25-2.25V11A2.253 2.253 0 0 1 35 8.75h13.416l.843 8.424A1.75 1.75 0 0 0 51 18.75h26a1.75 1.75 0 0 0 1.741-1.576l.843-8.424H93A2.253 2.253 0 0 1 95.25 11z" fill="#000000" opacity="1" data-original="#000000" class="hovered-path"></path><path d="M69.676 109.25H58.324a1.75 1.75 0 0 0 0 3.5h11.352a1.75 1.75 0 0 0 0-3.5z" fill="#000000" opacity="1" data-original="#000000" class="hovered-path"></path></g></svg></span>
-                                        <input class="form-control required"
-                                            id="simple" type="number" name="name"
+                                        <input class="form-control required" required
+                                            id="phone" type="number" name="phone"
                                             placeholder="Enter your number?">
+                                            <div class="invalid-feedback">Please enter valid Contact No.</div>
                                     </div>
                                 </div>
                                </div>
@@ -359,10 +362,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         opacity="1"
                                                         data-original="#000000"
                                                         class></path></g></svg></span>
-                                        <input class="form-control required"
-                                            id="exampleInputEmail2" type="email"
+                                        <input class="form-control required" required
+                                            id="Email" type="email"
                                             name="email"
                                             placeholder="Enter your email address">
+                                             <div class="invalid-feedback">Please enter valid email</div>
                                     </div>
                                 </div>
 
@@ -372,7 +376,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div
                                         class="position-relative form-group form-textarea mb-0">
                                         <textarea class="form-control"
-                                            name="comment"
+                                            name="message"
+                                              id="message"
                                             placeholder="Describe about your project"
                                             rows="4"></textarea>
                                         <span class="form-icon"><svg
@@ -410,6 +415,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             </div>
                         </form>
+                        <div class="d-none thank-you-container" id="contact-us-thank-you-message">
+         <div class="thank-you-content">
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+        </svg>
+        <h3 class="thank-you-title">Thank You!</h3>
+        <p class="thank-you-text">We've received your enquiry and will get back to you shortly.</p>
+        </div>
+      </div>
+      </div>
+
                     </div>
 
                 </div>
@@ -574,54 +591,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
     <!-- footer End -->
-    <div class="enquiry-form">
-        <div class="enquiry-form-container">
-            <div class="cross-btn">
-                <img src="images/cross.svg" alt="close">
-            </div>
-            <form>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <h4 class="mb-30 font-weight-600">Submit Your
-                            Enquiry</h4>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="text" class="form-control" placeholder="Your Name*" name="name" id="inputName">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="text" class="form-control" placeholder=" Company Name" name="company_name"
-                                id="companyName">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="email" class="form-control" placeholder="Email*" name="email" id="Email">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="text" class="form-control pincode" placeholder="Phone" name="phone" id="phone">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <textarea type="number" class="form-control" placeholder="Message" name="message"
-                                id="message"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <button type="submit" class="btn btn-primary basicbtn">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="btn btn-primary enquiry-btn">
-            <img src="images/cond.png" alt="enquiry">
-        </div>
-    </div>
+   <div id="enquiry-form-section"></div>
     <!-- end -->
     <!-- script -->
     <script src="js/jquery.min.js"></script>
@@ -632,6 +602,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/form-validations.js" ></script>
+    <script src="js/enquiry-form.js" ></script>
+    <script src="js/contact-us.js" ></script>
 </body>
 
 </html>
