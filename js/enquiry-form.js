@@ -1,6 +1,6 @@
 //add html form so that we can have same form iin multiple places
-document.addEventListener('DOMContentLoaded', function() {
-  const container = document.getElementById('enquiry-form-section');
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById("enquiry-form-section");
   container.innerHTML = `
     <div class="enquiry-form">
         <div class="enquiry-form-container">
@@ -55,108 +55,116 @@ document.addEventListener('DOMContentLoaded', function() {
   `;
 });
 
+// // Field validation function
+// function validateField(field) {
+//   if (field.hasAttribute("required") && !field.value.trim()) {
+//     field.classList.add("is-invalid");
+//     field.classList.remove("is-valid");
+//     return false;
+//   }
 
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('enquiryForm');
-  
-  // Enable real-time validation on blur
-  const inputs = form.querySelectorAll('input, textarea');
-  inputs.forEach(input => {
-    input.addEventListener('blur', () => {
-      input.classList.add('validate-me');
-      validateField(input);
-    });
-    
-    // Clear validation when user starts typing
-    input.addEventListener('input', () => {
-      if (input.classList.contains('validate-me')) {
-        validateField(input);
-      }
-    });
-  });
-  
+//   if (
+//     field.type === "email" &&
+//     field.value &&
+//     !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)
+//   ) {
+//     field.classList.add("is-invalid");
+//     field.classList.remove("is-valid");
+//     return false;
+//   }
+
+//   if (field.id === "phone" && field.value && !/^\d{10}$/.test(field.value)) {
+//     field.classList.add("is-invalid");
+//     field.classList.remove("is-valid");
+//     return false;
+//   }
+
+//   if (field.value) {
+//     field.classList.add("is-valid");
+//     field.classList.remove("is-invalid");
+//   } else {
+//     field.classList.remove("is-valid");
+//     field.classList.remove("is-invalid");
+//   }
+
+//   return field.checkValidity();
+// }
+
+// function getAllFormFields(form) {
+//   // Enable real-time validation on blur
+//   const inputs = form.querySelectorAll("input, textarea");
+//   inputs.forEach((input) => {
+//     input.addEventListener("blur", () => {
+//       input.classList.add("validate-me");
+//       validateField(input);
+//     });
+
+//     // Clear validation when user starts typing
+//     input.addEventListener("input", () => {
+//       if (input.classList.contains("validate-me")) {
+//         validateField(input);
+//       }
+//     });
+//   });
+
+//   return inputs;
+// }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("enquiryForm");
+
+  const inputs = getAllFormFields(form);
+
   // Form submission
-  form.addEventListener('submit', function(event) {
+  form.addEventListener("submit", function (event) {
     event.preventDefault();
     event.stopPropagation();
-    
+
     // Validate all fields
     let isValid = true;
-    inputs.forEach(input => {
-      input.classList.add('validate-me');
+    inputs.forEach((input) => {
+      input.classList.add("validate-me");
       if (!validateField(input)) {
         isValid = false;
       }
     });
-    
+
     if (isValid) {
       submitForm();
     } else {
-      form.classList.add('was-validated');
+      form.classList.add("was-validated");
     }
   });
-  
-  // Field validation function
-  function validateField(field) {
-    if (field.hasAttribute('required') && !field.value.trim()) {
-      field.classList.add('is-invalid');
-      field.classList.remove('is-valid');
-      return false;
-    }
-    
-    if (field.type === 'email' && field.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
-      field.classList.add('is-invalid');
-      field.classList.remove('is-valid');
-      return false;
-    }
-    
-    if (field.id === 'phone' && field.value && !/^\d{10}$/.test(field.value)) {
-      field.classList.add('is-invalid');
-      field.classList.remove('is-valid');
-      return false;
-    }
-    
-    if (field.value) {
-      field.classList.add('is-valid');
-      field.classList.remove('is-invalid');
-    } else {
-      field.classList.remove('is-valid');
-      field.classList.remove('is-invalid');
-    }
-    
-    return field.checkValidity();
-  }
-  
+
   // Form submission function
   async function submitForm() {
     const formData = {
-      name: document.getElementById('inputName').value,
-      company_name: document.getElementById('companyName').value,
-      email: document.getElementById('Email').value,
-      phone: document.getElementById('phone').value,
-      message: document.getElementById('message').value
+      name: document.getElementById("inputName").value,
+      company_name: document.getElementById("companyName").value,
+      email: document.getElementById("Email").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value,
     };
-    
+
     try {
-      const response = await fetch('YOUR_API_ENDPOINT', {
-        method: 'POST',
+      const response = await fetch("YOUR_API_ENDPOINT", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
-      
-      if (!response.ok) throw new Error('Submission failed');
-      
-      alert('Thank you! Your enquiry has been submitted.');
+
+      if (!response.ok) throw new Error("Submission failed");
+
+      alert("Thank you! Your enquiry has been submitted.");
       form.reset();
-      inputs.forEach(input => {
-        input.classList.remove('is-valid', 'validate-me');
+      inputs.forEach((input) => {
+        input.classList.remove("is-valid", "validate-me");
       });
-      
     } catch (error) {
-      console.error('Error:', error);
-      alert('There was an error submitting your form. Please try again.');
+      console.error("Error:", error);
+      alert("There was an error submitting your form. Please try again.");
     }
   }
 });

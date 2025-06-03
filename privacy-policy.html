@@ -1,331 +1,662 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Zetup Store</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/font.css">
-     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
+    <link rel="stylesheet" href="css/font.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
 
-<body>
+  <body>
     <!-- loading -->
     <div id="loading">
-        <div id="loading-center">
-            <img src="images/logo.gif" alt="loader">
-        </div>
+      <div id="loading-center">
+        <img src="images/logo.gif" alt="loader" />
+      </div>
     </div>
     <!-- loading End -->
     <!--================================= -->
     <!-- Header -->
 
     <header class="sticky-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg ">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="logo">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="images/menu.png" alt="menu" />
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="price.html">Price</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="migrationDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Migration Services <i class="fas fa-chevron-down"></i>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <img src="images/menu.png" alt="menu">
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About
-                                Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="price.html">Price</a>
-                        </li>
-                         <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle" href="#" id="migrationDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Migration Services <i class="fas fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="migrationDropdown">
-                                <li><a class="dropdown-item" href="shopify-sale.html">Shopify to ZetupStore
-                                        Migration</a></li>
-                                <li><a class="dropdown-item" href="wix-migration.html">Wix to ZetupStore
-                                        Migration</a></li>
-                                <li><a class="dropdown-item" href="woocommerce-migration.html">WooCommerce to
-                                        ZetupStore Migration</a></li>
-                            </ul>
-                        </li>
-                           <!-- <li class="nav-item">
+                <ul class="dropdown-menu" aria-labelledby="migrationDropdown">
+                  <li>
+                    <a class="dropdown-item" href="shopify-sale.html"
+                      >Shopify to ZetupStore Migration</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="wix-migration.html"
+                      >Wix to ZetupStore Migration</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="woocommerce-migration.html"
+                      >WooCommerce to ZetupStore Migration</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
                         </li> -->
-                        <li class="nav-item ">
-                            <a class="nav-link" href="contact-us.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item last-menu">
-                            <a class="nav-link" href="https://zetupstore.com/login">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+              </li>
+              <li class="nav-item last-menu">
+                <a class="nav-link" href="https://zetupstore.com/login"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- end -->
 
     <section class="about-us faq-hero">
-        <div class="banner-ani">
-            <label><input value="on" name="dummy" type="checkbox" class="bubble"></label>
-        </div>
-        <!-- <div class="shape-circle"></div>
+      <div class="banner-ani">
+        <label
+          ><input value="on" name="dummy" type="checkbox" class="bubble"
+        /></label>
+      </div>
+      <!-- <div class="shape-circle"></div>
             <div class="shape-triangle">
                 <img src="images/bnr-shape.svg" alt="banner-shape">
             </div> -->
-        <div class="container">
-            <div class="row align-items-center">
-                        <div class="col-xl-8">
-                 <article class="about-wrap">
-                <h2 class="font-weight-700 ">Privacy  
-                    <span>Policy</span>
-                </h2>
-                <p class="mr-20">At ZetupStore, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our website and services (collectively, the "Service").
-                  <br/>
-                  By accessing or using the ZetupStore Service, you agree to the terms of this Privacy Policy.
-
-                </p>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-8">
+            <article class="about-wrap">
+              <h2 class="font-weight-700">
+                Privacy
+                <span>Policy</span>
+              </h2>
+              <p class="mr-20">
+                At ZetupStore, we are committed to protecting your privacy and
+                ensuring the security of your personal information. This Privacy
+                Policy explains how we collect, use, disclose, and protect your
+                information when you use our website and services (collectively,
+                the "Service").
+                <br />
+                By accessing or using the ZetupStore Service, you agree to the
+                terms of this Privacy Policy.
+              </p>
             </article>
-                </div>
-                        <div class="col-xl-4"> 
-                            <div class="about-hero-img">
-
-                                 <img class="img-fluid "
-                                        src="images/privacy-hero.png" alt="img-1">
-                            </div>
-                             
-                        
-                        </div>
-
+          </div>
+          <div class="col-xl-4">
+            <div class="about-hero-img">
+              <img
+                class="img-fluid"
+                src="images/privacy-hero.png"
+                alt="img-1"
+              />
             </div>
-           
+          </div>
         </div>
+      </div>
     </section>
 
-
-
-
-
-   
-<!-- section_cta -->
+    <!-- section_cta -->
     <section class="section_privacy bg-white">
-        <div class="container">    
-    <div class="section">
-      <h2>1. Information We Collect</h2>
-      <p>We collect information to provide, operate, and improve our Service. The types of information we may collect when you interact with our website or platform include:</p>
-      <ul>
-        <li>
-          <strong>Personal Information:</strong> Information that can be used to identify you directly or indirectly. This may include:
+      <div class="container">
+        <div class="section">
+          <h2>1. Information We Collect</h2>
+          <p>
+            We collect information to provide, operate, and improve our Service.
+            The types of information we may collect when you interact with our
+            website or platform include:
+          </p>
           <ul>
-            <li>Contact details (such as your name, email address, phone number).</li>
-            <li>Billing and shipping address.</li>
-            <li>Account credentials (username, password - we store encrypted passwords).</li>
-            <li>Information you provide when you communicate with us (such as messages or inquiries you send through our contact forms or support channels).</li>
-            <li>Information you provide when you participate in surveys, contests, or promotions.</li>
-            <li>Information you upload or provide when setting up and operating your e-commerce store on our platform (this may include information about your customers, products, and business operations – you are responsible for ensuring you have the necessary rights and consents to provide this data to us).</li>
+            <li>
+              <strong>Personal Information:</strong> Information that can be
+              used to identify you directly or indirectly. This may include:
+              <ul>
+                <li>
+                  Contact details (such as your name, email address, phone
+                  number).
+                </li>
+                <li>Billing and shipping address.</li>
+                <li>
+                  Account credentials (username, password - we store encrypted
+                  passwords).
+                </li>
+                <li>
+                  Information you provide when you communicate with us (such as
+                  messages or inquiries you send through our contact forms or
+                  support channels).
+                </li>
+                <li>
+                  Information you provide when you participate in surveys,
+                  contests, or promotions.
+                </li>
+                <li>
+                  Information you upload or provide when setting up and
+                  operating your e-commerce store on our platform (this may
+                  include information about your customers, products, and
+                  business operations – you are responsible for ensuring you
+                  have the necessary rights and consents to provide this data to
+                  us).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Payment Information:</strong> Details related to
+              transactions made through the Service. This includes credit card
+              or other payment account information. <br />
+              <em
+                >Note: Payment processing is handled through secure third-party
+                payment gateways. We do not directly store your full payment
+                card details on our servers.</em
+              >
+            </li>
+            <li>
+              <strong>Usage Data:</strong> Information about how you access and
+              use the Service. This may include:
+              <ul>
+                <li>Your device's Internet Protocol (IP) address.</li>
+                <li>Browser type and version.</li>
+                <li>Device type and operating system.</li>
+                <li>
+                  Pages of our Service that you visit, the time and date of your
+                  visit, the time spent on those pages.
+                </li>
+                <li>
+                  Actions taken on the platform (e.g., features used, settings
+                  preferred).
+                </li>
+                <li>Referring and exit pages.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Cookies and Tracking Technologies:</strong> We use cookies
+              and similar tracking technologies to collect information about
+              your activity on our Service. Please refer to our dedicated
+              Section 7: Cookies and Tracking Technologies for more details.
+            </li>
           </ul>
-        </li>
-        <li>
-          <strong>Payment Information:</strong> Details related to transactions made through the Service. This includes credit card or other payment account information. <br>
-          <em>Note: Payment processing is handled through secure third-party payment gateways. We do not directly store your full payment card details on our servers.</em>
-        </li>
-        <li>
-          <strong>Usage Data:</strong> Information about how you access and use the Service. This may include:
+          <p><strong>How We Collect Information:</strong></p>
           <ul>
-            <li>Your device's Internet Protocol (IP) address.</li>
-            <li>Browser type and version.</li>
-            <li>Device type and operating system.</li>
-            <li>Pages of our Service that you visit, the time and date of your visit, the time spent on those pages.</li>
-            <li>Actions taken on the platform (e.g., features used, settings preferred).</li>
-            <li>Referring and exit pages.</li>
+            <li>
+              Directly from you: When you create an account, use the Service,
+              communicate with us, or provide information through forms or
+              features.
+            </li>
+            <li>
+              Automatically: Through cookies, log files, and other tracking
+              technologies as you access and use the Service.
+            </li>
+            <li>
+              From third parties: In limited circumstances, we may receive
+              information from third parties (e.g., from payment processors
+              confirming a transaction).
+            </li>
           </ul>
-        </li>
-        <li>
-          <strong>Cookies and Tracking Technologies:</strong> We use cookies and similar tracking technologies to collect information about your activity on our Service. Please refer to our dedicated Section 7: Cookies and Tracking Technologies for more details.
-        </li>
-      </ul>
-      <p><strong>How We Collect Information:</strong></p>
-      <ul>
-        <li>Directly from you: When you create an account, use the Service, communicate with us, or provide information through forms or features.</li>
-        <li>Automatically: Through cookies, log files, and other tracking technologies as you access and use the Service.</li>
-        <li>From third parties: In limited circumstances, we may receive information from third parties (e.g., from payment processors confirming a transaction).</li>
-      </ul>
-    </div>
+        </div>
 
-    <div class="section">
-      <h2>2. How We Use Your Information</h2>
-      <p>We use your information for various purposes, based on lawful grounds, including:</p>
-      <ul>
-        <li>To Provide and Operate the Service: To allow you to access and use the ZetupStore platform, create and manage your online store, and process transactions (necessary for the performance of our contract with you).</li>
-        <li>To Manage Your Account: To create and maintain your user account, provide customer support, and communicate with you about your account (necessary for the performance of our contract with you and our legitimate interests).</li>
-        <li>To Improve and Personalize the Service: To understand how you use the Service, analyze trends, and customize your experience (based on our legitimate interests in improving our offerings).</li>
-        <li>To Process Transactions: To facilitate and complete payment transactions for your use of the Service (necessary for the performance of our contract with you).</li>
-        <li>To Communicate with You: To send you service-related announcements, technical notices, security alerts, and administrative messages (necessary for the performance of our contract with you and our legitimate interests).</li>
-        <li>Marketing Communications: To send you promotional emails or newsletters about our services, features, or offers, but only if you have given us your explicit consent to do so. You can opt out of receiving marketing communications at any time (based on your consent).</li>
-        <li>Security and Fraud Prevention: To monitor activity on the Service, detect and prevent fraudulent or illegal activities, and protect the security and integrity of our platform and users (based on our legitimate interests and legal obligations).</li>
-        <li>Compliance with Legal Obligations: To comply with applicable laws, regulations, legal processes, or governmental requests (based on our legal obligations).</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>3. Data Security</h2>
-      <p>We are committed to protecting the personal information you entrust to us. We implement appropriate technical and organizational measures to safeguard your data against unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
-      <ul>
-        <li>Encryption of sensitive data (e.g., passwords) during transmission and at rest where appropriate.</li>
-        <li>Use of secure servers and firewalls.</li>
-        <li>Regular security audits and vulnerability assessments.</li>
-        <li>Access controls and limitations to ensure only authorized personnel can access personal information on a need-to-know basis.</li>
-        <li>Implementation of internal policies and procedures for data handling and security.</li>
-        <li>Compliance with relevant industry standards where applicable.</li>
-      </ul>
-      <p>While we take reasonable steps to protect your information, please be aware that no method of transmission over the internet or electronic storage is 100% secure. We cannot guarantee the absolute security of your personal information.</p>
-    </div>
-
-    <div class="section">
-      <h2>4. Data Sharing and Disclosure</h2>
-      <p>We do not sell, rent, or trade your personal information to third parties for their direct marketing purposes. We may share your information with trusted third-party service providers and partners only when necessary to provide and improve our Service, and in accordance with this Privacy Policy:</p>
-      <ul>
-        <li><strong>Payment Processors:</strong> We share information with secure third-party payment gateways to process transactions. They are obligated to protect your information in accordance with their own privacy policies and relevant regulations.</li>
-        <li><strong>Hosting and Infrastructure Providers:</strong> We may share information with third-party hosting and infrastructure providers that support the operation of our Service.</li>
-        <li><strong>Technical and Customer Support Providers:</strong> We may share information with third parties who assist us in providing customer support and technical maintenance.</li>
-        <li><strong>Analytics Providers:</strong> We may share Usage Data with analytics providers (like Google Analytics) to help us understand how our Service is used and improve its performance. This data is typically aggregated or de-identified.</li>
-        <li><strong>Legal and Compliance:</strong> We may disclose your information if required by law, legal process, or governmental request, or when we believe in good faith that disclosure is necessary to protect our legal rights, enforce our Terms and Conditions, prevent fraud or harm, or respond to an emergency.</li>
-        <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, reorganization, or sale of all or a portion of our assets, your personal information may be transferred as part of that transaction. We will notify you via email or a prominent notice on our Service of any such change in ownership or control of your personal information.</li>
-      </ul>
-      <p>When we share information with third parties, we enter into agreements that require them to protect your personal information and use it only for the purposes for which we provide it to them.</p>
-      <p><strong>International Data Transfers:</strong> We may transfer and process your personal information in countries other than India, where our service providers or partners are located. These countries may have data protection laws different from those in India. When we transfer your information internationally, we take steps to ensure that your information is protected in accordance with this Privacy Policy and applicable laws, including implementing appropriate safeguards like standard contractual clauses or relying on other lawful transfer mechanisms.</p>
-    </div>
-
-    <div class="section">
-      <h2>5. Data Retention</h2>
-      <p>We retain your personal information only for as long as necessary to fulfill the purposes for which we collected it, including for the purposes of satisfying any legal, accounting, or reporting requirements, or as required by applicable laws like the DPDP Act.</p>
-      <p>To determine the appropriate retention period for personal data, we consider the amount, nature, and sensitivity of the personal data, the potential risk of harm from unauthorized use or disclosure of your personal data, the purposes for which we process your personal data and whether we can achieve those purposes through other means, and the applicable legal requirements.</p>
-      <p>When we no longer require your personal information, we will securely delete or anonymize it in accordance with our data retention policies and applicable laws.</p>
-    </div>
-
-    <div class="section">
-      <h2>6. Your Privacy Rights</h2>
-      <p>Subject to applicable law, you have certain rights regarding your personal information. As a user of ZetupStore, you have the right to:</p>
-      <ul>
-        <li><strong>Access Your Data:</strong> Request access to the personal information we hold about you and receive a copy of it.</li>
-        <li><strong>Correct Your Data:</strong> Request that we correct any personal information about you that is inaccurate, incomplete, or outdated.</li>
-        <li><strong>Erase Your Data:</strong> Request the deletion or erasure of your personal information when it is no longer necessary for the purposes for which it was collected, or if you withdraw your consent (subject to certain legal exceptions).</li>
-        <li><strong>Withdraw Consent:</strong> Where we rely on your consent to process your personal information, you have the right to withdraw that consent at any time. Please note that withdrawing consent will not affect the lawfulness of processing based on consent before its withdrawal.</li>
-        <li><strong>Grievance Redressal:</strong> Lodge a grievance with our designated Grievance Officer regarding the processing of your personal data.</li>
-        <li><strong>Nominate:</strong> (As per DPDP Act) The right to nominate a person who will exercise your rights in the event of your death or incapacity.</li>
-      </ul>
-      <p>To exercise any of these rights, please contact us using the contact details provided in Section 11: Contact Us / Grievance Redressal below. We will respond to your request in accordance with applicable law.</p>
-    </div>
-
-    <div class="section">
-      <h2>7. Cookies and Tracking Technologies</h2>
-      <p>We use cookies and similar tracking technologies to track the activity on our Service and hold certain information.</p>
-      <ul>
-        <li><strong>Cookies:</strong> Cookies are small files placed on your device. They can be <strong>Persistent</strong> or <strong>Session</strong> Cookies. Persistent Cookies remain on your personal computer or mobile device when you go offline, while Session Cookies are deleted as soon as you close your web browser.</li>
-        <li><strong>How We Use Cookies:</strong> We use cookies for various purposes, including:
+        <div class="section">
+          <h2>2. How We Use Your Information</h2>
+          <p>
+            We use your information for various purposes, based on lawful
+            grounds, including:
+          </p>
           <ul>
-            <li>Necessary Cookies: Essential for the operation of the Service (e.g., to keep you logged in).</li>
-            <li>Analytical/Performance Cookies: To analyze how users interact with our Service and monitor performance.</li>
-            <li>Functionality Cookies: To remember your preferences and settings.</li>
-            <li>Marketing/Advertising Cookies: To deliver relevant advertisements to you (if applicable, and with your consent where required).</li>
+            <li>
+              To Provide and Operate the Service: To allow you to access and use
+              the ZetupStore platform, create and manage your online store, and
+              process transactions (necessary for the performance of our
+              contract with you).
+            </li>
+            <li>
+              To Manage Your Account: To create and maintain your user account,
+              provide customer support, and communicate with you about your
+              account (necessary for the performance of our contract with you
+              and our legitimate interests).
+            </li>
+            <li>
+              To Improve and Personalize the Service: To understand how you use
+              the Service, analyze trends, and customize your experience (based
+              on our legitimate interests in improving our offerings).
+            </li>
+            <li>
+              To Process Transactions: To facilitate and complete payment
+              transactions for your use of the Service (necessary for the
+              performance of our contract with you).
+            </li>
+            <li>
+              To Communicate with You: To send you service-related
+              announcements, technical notices, security alerts, and
+              administrative messages (necessary for the performance of our
+              contract with you and our legitimate interests).
+            </li>
+            <li>
+              Marketing Communications: To send you promotional emails or
+              newsletters about our services, features, or offers, but only if
+              you have given us your explicit consent to do so. You can opt out
+              of receiving marketing communications at any time (based on your
+              consent).
+            </li>
+            <li>
+              Security and Fraud Prevention: To monitor activity on the Service,
+              detect and prevent fraudulent or illegal activities, and protect
+              the security and integrity of our platform and users (based on our
+              legitimate interests and legal obligations).
+            </li>
+            <li>
+              Compliance with Legal Obligations: To comply with applicable laws,
+              regulations, legal processes, or governmental requests (based on
+              our legal obligations).
+            </li>
           </ul>
-        </li>
-        <li><strong>Your Choices Regarding Cookies:</strong> You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service. You can typically manage your cookie preferences through your browser settings.</li>
-      </ul>
-    </div>
+        </div>
 
-    <div class="section">
-      <h2>8. Third-Party Links</h2>
-      <p>Our Service may contain links to websites or services operated by third parties. This Privacy Policy does not apply to third-party websites or services. We are not responsible for the privacy practices, content, or security of third-party sites. We encourage you to review the privacy policies of any third-party site you visit.</p>
-    </div>
+        <div class="section">
+          <h2>3. Data Security</h2>
+          <p>
+            We are committed to protecting the personal information you entrust
+            to us. We implement appropriate technical and organizational
+            measures to safeguard your data against unauthorized access,
+            alteration, disclosure, or destruction. These measures include:
+          </p>
+          <ul>
+            <li>
+              Encryption of sensitive data (e.g., passwords) during transmission
+              and at rest where appropriate.
+            </li>
+            <li>Use of secure servers and firewalls.</li>
+            <li>Regular security audits and vulnerability assessments.</li>
+            <li>
+              Access controls and limitations to ensure only authorized
+              personnel can access personal information on a need-to-know basis.
+            </li>
+            <li>
+              Implementation of internal policies and procedures for data
+              handling and security.
+            </li>
+            <li>
+              Compliance with relevant industry standards where applicable.
+            </li>
+          </ul>
+          <p>
+            While we take reasonable steps to protect your information, please
+            be aware that no method of transmission over the internet or
+            electronic storage is 100% secure. We cannot guarantee the absolute
+            security of your personal information.
+          </p>
+        </div>
 
-    <div class="section">
-      <h2>9. Children's Privacy</h2>
-      <div class="option">
-        <strong>Option A (If your service is not for children):</strong> Our Service is not intended for individuals under the age of 18. We do not knowingly collect personally identifiable information from individuals under 18. If you are a parent or guardian and you are aware that your child has provided us with Personal Information, please contact us. If we become aware that we have collected Personal Information from a child under 18 without verification of parental consent, we take steps to remove that information from our servers.
+        <div class="section">
+          <h2>4. Data Sharing and Disclosure</h2>
+          <p>
+            We do not sell, rent, or trade your personal information to third
+            parties for their direct marketing purposes. We may share your
+            information with trusted third-party service providers and partners
+            only when necessary to provide and improve our Service, and in
+            accordance with this Privacy Policy:
+          </p>
+          <ul>
+            <li>
+              <strong>Payment Processors:</strong> We share information with
+              secure third-party payment gateways to process transactions. They
+              are obligated to protect your information in accordance with their
+              own privacy policies and relevant regulations.
+            </li>
+            <li>
+              <strong>Hosting and Infrastructure Providers:</strong> We may
+              share information with third-party hosting and infrastructure
+              providers that support the operation of our Service.
+            </li>
+            <li>
+              <strong>Technical and Customer Support Providers:</strong> We may
+              share information with third parties who assist us in providing
+              customer support and technical maintenance.
+            </li>
+            <li>
+              <strong>Analytics Providers:</strong> We may share Usage Data with
+              analytics providers (like Google Analytics) to help us understand
+              how our Service is used and improve its performance. This data is
+              typically aggregated or de-identified.
+            </li>
+            <li>
+              <strong>Legal and Compliance:</strong> We may disclose your
+              information if required by law, legal process, or governmental
+              request, or when we believe in good faith that disclosure is
+              necessary to protect our legal rights, enforce our Terms and
+              Conditions, prevent fraud or harm, or respond to an emergency.
+            </li>
+            <li>
+              <strong>Business Transfers:</strong> In the event of a merger,
+              acquisition, reorganization, or sale of all or a portion of our
+              assets, your personal information may be transferred as part of
+              that transaction. We will notify you via email or a prominent
+              notice on our Service of any such change in ownership or control
+              of your personal information.
+            </li>
+          </ul>
+          <p>
+            When we share information with third parties, we enter into
+            agreements that require them to protect your personal information
+            and use it only for the purposes for which we provide it to them.
+          </p>
+          <p>
+            <strong>International Data Transfers:</strong> We may transfer and
+            process your personal information in countries other than India,
+            where our service providers or partners are located. These countries
+            may have data protection laws different from those in India. When we
+            transfer your information internationally, we take steps to ensure
+            that your information is protected in accordance with this Privacy
+            Policy and applicable laws, including implementing appropriate
+            safeguards like standard contractual clauses or relying on other
+            lawful transfer mechanisms.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>5. Data Retention</h2>
+          <p>
+            We retain your personal information only for as long as necessary to
+            fulfill the purposes for which we collected it, including for the
+            purposes of satisfying any legal, accounting, or reporting
+            requirements, or as required by applicable laws like the DPDP Act.
+          </p>
+          <p>
+            To determine the appropriate retention period for personal data, we
+            consider the amount, nature, and sensitivity of the personal data,
+            the potential risk of harm from unauthorized use or disclosure of
+            your personal data, the purposes for which we process your personal
+            data and whether we can achieve those purposes through other means,
+            and the applicable legal requirements.
+          </p>
+          <p>
+            When we no longer require your personal information, we will
+            securely delete or anonymize it in accordance with our data
+            retention policies and applicable laws.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>6. Your Privacy Rights</h2>
+          <p>
+            Subject to applicable law, you have certain rights regarding your
+            personal information. As a user of ZetupStore, you have the right
+            to:
+          </p>
+          <ul>
+            <li>
+              <strong>Access Your Data:</strong> Request access to the personal
+              information we hold about you and receive a copy of it.
+            </li>
+            <li>
+              <strong>Correct Your Data:</strong> Request that we correct any
+              personal information about you that is inaccurate, incomplete, or
+              outdated.
+            </li>
+            <li>
+              <strong>Erase Your Data:</strong> Request the deletion or erasure
+              of your personal information when it is no longer necessary for
+              the purposes for which it was collected, or if you withdraw your
+              consent (subject to certain legal exceptions).
+            </li>
+            <li>
+              <strong>Withdraw Consent:</strong> Where we rely on your consent
+              to process your personal information, you have the right to
+              withdraw that consent at any time. Please note that withdrawing
+              consent will not affect the lawfulness of processing based on
+              consent before its withdrawal.
+            </li>
+            <li>
+              <strong>Grievance Redressal:</strong> Lodge a grievance with our
+              designated Grievance Officer regarding the processing of your
+              personal data.
+            </li>
+            <li>
+              <strong>Nominate:</strong> (As per DPDP Act) The right to nominate
+              a person who will exercise your rights in the event of your death
+              or incapacity.
+            </li>
+          </ul>
+          <p>
+            To exercise any of these rights, please contact us using the contact
+            details provided in Section 11: Contact Us / Grievance Redressal
+            below. We will respond to your request in accordance with applicable
+            law.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>7. Cookies and Tracking Technologies</h2>
+          <p>
+            We use cookies and similar tracking technologies to track the
+            activity on our Service and hold certain information.
+          </p>
+          <ul>
+            <li>
+              <strong>Cookies:</strong> Cookies are small files placed on your
+              device. They can be <strong>Persistent</strong> or
+              <strong>Session</strong> Cookies. Persistent Cookies remain on
+              your personal computer or mobile device when you go offline, while
+              Session Cookies are deleted as soon as you close your web browser.
+            </li>
+            <li>
+              <strong>How We Use Cookies:</strong> We use cookies for various
+              purposes, including:
+              <ul>
+                <li>
+                  Necessary Cookies: Essential for the operation of the Service
+                  (e.g., to keep you logged in).
+                </li>
+                <li>
+                  Analytical/Performance Cookies: To analyze how users interact
+                  with our Service and monitor performance.
+                </li>
+                <li>
+                  Functionality Cookies: To remember your preferences and
+                  settings.
+                </li>
+                <li>
+                  Marketing/Advertising Cookies: To deliver relevant
+                  advertisements to you (if applicable, and with your consent
+                  where required).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Your Choices Regarding Cookies:</strong> You can instruct
+              your browser to refuse all cookies or to indicate when a cookie is
+              being sent. However, if you do not accept cookies, you may not be
+              able to use some portions of our Service. You can typically manage
+              your cookie preferences through your browser settings.
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>8. Third-Party Links</h2>
+          <p>
+            Our Service may contain links to websites or services operated by
+            third parties. This Privacy Policy does not apply to third-party
+            websites or services. We are not responsible for the privacy
+            practices, content, or security of third-party sites. We encourage
+            you to review the privacy policies of any third-party site you
+            visit.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>9. Children's Privacy</h2>
+          <div class="option">
+            <strong>Option A (If your service is not for children):</strong> Our
+            Service is not intended for individuals under the age of 18. We do
+            not knowingly collect personally identifiable information from
+            individuals under 18. If you are a parent or guardian and you are
+            aware that your child has provided us with Personal Information,
+            please contact us. If we become aware that we have collected
+            Personal Information from a child under 18 without verification of
+            parental consent, we take steps to remove that information from our
+            servers.
+          </div>
+          <div class="option">
+            <strong
+              >Option B (If your service may be used by children, with parental
+              consent):</strong
+            >
+            We understand the importance of protecting children's privacy. We do
+            not knowingly collect personal data from children without obtaining
+            verifiable parental consent. We do not process personal data of
+            children in a manner that is likely to cause detrimental effect on
+            their well-being, or undertake tracking, behavioral monitoring, or
+            targeted advertising directed at children. If you believe we have
+            unintentionally collected information from a child without proper
+            consent, please contact us.
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>10. Changes to This Privacy Policy</h2>
+          <p>
+            We may update our Privacy Policy from time to time to reflect
+            changes in our practices, technology, legal requirements, and other
+            factors. We will notify you of any material changes by posting the
+            new Privacy Policy on this page and updating the "Effective Date" at
+            the top. We may also inform you through email or a prominent notice
+            on our Service before the changes become effective.
+          </p>
+          <p>
+            You are advised to review this Privacy Policy periodically for any
+            changes. Changes to this Privacy Policy are effective when they are
+            posted on this page.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>11. Contact Us / Grievance Redressal</h2>
+          <div class="contact">
+            <p>
+              <strong>By email:</strong>
+              <a href="mailto:support@zetupstore.com">support@zetupstore.com</a>
+            </p>
+            <p>
+              We will respond to your requests and address your grievances in a
+              timely manner in accordance with applicable law.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="option">
-        <strong>Option B (If your service may be used by children, with parental consent):</strong> We understand the importance of protecting children's privacy. We do not knowingly collect personal data from children without obtaining verifiable parental consent. We do not process personal data of children in a manner that is likely to cause detrimental effect on their well-being, or undertake tracking, behavioral monitoring, or targeted advertising directed at children. If you believe we have unintentionally collected information from a child without proper consent, please contact us.
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>10. Changes to This Privacy Policy</h2>
-      <p>We may update our Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, and other factors. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. We may also inform you through email or a prominent notice on our Service before the changes become effective.</p>
-      <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-    </div>
-
-    <div class="section">
-      <h2>11. Contact Us / Grievance Redressal</h2>
-      <div class="contact">
-        <p><strong>By email:</strong> <a href="mailto:support@zetupstore.com">support@zetupstore.com</a></p>
-        <p>We will respond to your requests and address your grievances in a timely manner in accordance with applicable law.</p>
-      </div>
-    </div>
-  </div>
     </section>
     <!-- end -->
-      <!-- ==================== Start call to action ==================== -->
+    <!-- ==================== Start call to action ==================== -->
 
-     <section class="call-action-img">
-        <div class="container">
-            <div class="sec-lg-head section-padding">
-                <div class="row ontop">
-                    <div class="col-11 d-flex align-items-center">
-                        <div class="valign">
-                            <h2 class="fz-50 d-rotate wow">
-                                <span class="rotate-text">Still Have Any questions?  <span>we are here 24X7.</span> </span>
-                                 
-                            </h2>
-                        </div>
-                        <div class="ml-auto">
-                            <a href="contact-us.html" class="btn btn-primary mr-20">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
+    <section class="call-action-img">
+      <div class="container">
+        <div class="sec-lg-head section-padding">
+          <div class="row ontop">
+            <div class="col-11 d-flex align-items-center">
+              <div class="valign">
+                <h2 class="fz-50 d-rotate wow">
+                  <span class="rotate-text"
+                    >Still Have Any questions? <span>we are here 24X7.</span>
+                  </span>
+                </h2>
+              </div>
+              <div class="ml-auto">
+                <a href="contact-us.html" class="btn btn-primary mr-20"
+                  >Contact Us</a
+                >
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ==================== End call to action ==================== -->
-<!-- WhatsApp link -->
-<a href="https://api.whatsapp.com/send?phone=919462908999&text=Hello%2C%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20please%20provide%20more%20details%3F%20Thank%20you!" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
-	<img src="images/whattshap-icon.svg" alt="whatsapp chat" />
-</a>
-<!-- and -->
+    <!-- WhatsApp link -->
+    <a
+      href="https://api.whatsapp.com/send?phone=919462908999&text=Hello%2C%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20please%20provide%20more%20details%3F%20Thank%20you!"
+      target="_blank"
+      class="btn-whatsapp-pulse btn-whatsapp-pulse-border"
+    >
+      <img src="images/whattshap-icon.svg" alt="whatsapp chat" />
+    </a>
+    <!-- and -->
 
-    <!-- footer --> 
+    <!-- footer -->
     <div class="footer linear-gradient-3 position-relative pt-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-sm-12 col-12">
-                    <div class="footer-logo">
-                        <img src="images/footer-logo.png" alt="logo">
-                    </div>
-                    <p class="footer-content">
-                        ZetupStore — A fully scalable eCommerce platform giving you unlimited flexibility to grow, adapt, and expand your online store with no limits.
-                    </p>
-                    <div class="contact-main">
-                        <!-- <div class="contact-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-sm-12 col-12">
+            <div class="footer-logo">
+              <img src="images/footer-logo.png" alt="logo" />
+            </div>
+            <p class="footer-content">
+              ZetupStore — A fully scalable eCommerce platform giving you
+              unlimited flexibility to grow, adapt, and expand your online store
+              with no limits.
+            </p>
+            <div class="contact-main">
+              <!-- <div class="contact-sec">
                                 <div class="contact-icon">
                                     <img src="images/telephone.png"
                                         alt="telephone">
@@ -334,159 +665,306 @@
                                         href="tel:9563434234">91+
                                         9563434234</a></div>
                             </div> -->
-                       
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-4 col-12">
-                    <div class="footer-heading">
-                        <h5 class="font-weight-600">Quick Links</h5>
-                    </div>
-                    <div class="footer-link">
-                        <ul>
-                            <li>
-                                <a href="about-us.html">
-                                    <div class="footer-line"></div> About Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="price.html">
-                                    <div class="footer-line"></div> Pricing
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="privacy-policy.html">
-                                    <div class="footer-line"></div> Privacy Policy
-                                </a>
-                            </li>
-                            <!-- <li>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-4 col-12">
+            <div class="footer-heading">
+              <h5 class="font-weight-600">Quick Links</h5>
+            </div>
+            <div class="footer-link">
+              <ul>
+                <li>
+                  <a href="about-us.html">
+                    <div class="footer-line"></div>
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="price.html">
+                    <div class="footer-line"></div>
+                    Pricing
+                  </a>
+                </li>
+
+                <li>
+                  <a href="privacy-policy.html">
+                    <div class="footer-line"></div>
+                    Privacy Policy
+                  </a>
+                </li>
+                <!-- <li>
                                 <a href="#">
                                     <div class="footer-line"></div> Blog 
                                 </a>
                             </li> -->
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-4 col-12">
-                    <div class="footer-heading">
-                        <h5 class="font-weight-600">Support & Help</h5>
-                    </div>
-                    <div class="footer-link">
-                        <ul>
-                            <li>
-                                <a href="faq.html">
-                                    <div class="footer-line"></div>FAQs
-                                </a>
-                            </li>
-                            <li>
-                                <a href="contact-us.html">
-                                    <div class="footer-line"></div>Contact Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="terms-condition.html">
-                                    <div class="footer-line"></div>
-                                    Terms & Conditions
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-sm-4 col-12">
-                    <div class="footer-heading">
-                        <h5 class="font-weight-600">Social Media</h5>
-                    </div>
-                    <div class="footer-link">
-                        <ul>
-                            <li>
-                                <div class="contact-sec">
-                                    <div class="contact-icon">
-                                        <img src="images/mail.png" alt="telephone">
-                                    </div>
-                                    <div class="contact-des"><a href="mailto:support@zetupstore.com">support@zetupstore.com</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="footer-social">
-                                <div class="icon-box">
-                                    <a href="https://www.linkedin.com/company/zetupstore" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g data-name="Layer 2"><rect width="176" height="176" fill="#0077b5" rx="24" opacity="1" data-original="#0077b5" class=""></rect><g fill="#fff"><path d="M63.4 48a15 15 0 1 1-15-15 15 15 0 0 1 15 15zM60 73v66.27a3.71 3.71 0 0 1-3.71 3.73H40.48a3.71 3.71 0 0 1-3.72-3.72V73a3.72 3.72 0 0 1 3.72-3.72h15.81A3.72 3.72 0 0 1 60 73zM142.64 107.5v32.08a3.41 3.41 0 0 1-3.42 3.42h-17a3.41 3.41 0 0 1-3.42-3.42v-31.09c0-4.64 1.36-20.32-12.13-20.32-10.45 0-12.58 10.73-13 15.55v35.86A3.42 3.42 0 0 1 90.3 143H73.88a3.41 3.41 0 0 1-3.41-3.42V72.71a3.41 3.41 0 0 1 3.41-3.42H90.3a3.42 3.42 0 0 1 3.42 3.42v5.78c3.88-5.82 9.63-10.31 21.9-10.31 27.18 0 27.02 25.38 27.02 39.32z" fill="#ffffff" opacity="1" data-original="#ffffff"></path></g></g></g></svg>
-                                    </a>
-                                </div>
-                                <div class="icon-box">
-                                    <a href="https://www.instagram.com/zetup.store" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><linearGradient id="a" x1="275.517" x2="275.517" y1="4.57" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:#E09B3D" stop-color="#e09b3d"></stop><stop offset=".3" style="stop-color:#C74C4D" stop-color="#c74c4d"></stop><stop offset=".6" style="stop-color:#C21975" stop-color="#c21975"></stop><stop offset="1" style="stop-color:#7024C4" stop-color="#7024c4"></stop></linearGradient><path d="M386.878 0H164.156C73.64 0 0 73.64 0 164.156v222.722c0 90.516 73.64 164.156 164.156 164.156h222.722c90.516 0 164.156-73.64 164.156-164.156V164.156C551.033 73.64 477.393 0 386.878 0zM495.6 386.878c0 60.045-48.677 108.722-108.722 108.722H164.156c-60.045 0-108.722-48.677-108.722-108.722V164.156c0-60.046 48.677-108.722 108.722-108.722h222.722c60.045 0 108.722 48.676 108.722 108.722v222.722z" style="fill:url(#a)" fill=""></path><linearGradient id="b" x1="275.517" x2="275.517" y1="4.57" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:#E09B3D" stop-color="#e09b3d"></stop><stop offset=".3" style="stop-color:#C74C4D" stop-color="#c74c4d"></stop><stop offset=".6" style="stop-color:#C21975" stop-color="#c21975"></stop><stop offset="1" style="stop-color:#7024C4" stop-color="#7024c4"></stop></linearGradient><path d="M275.517 133C196.933 133 133 196.933 133 275.516s63.933 142.517 142.517 142.517S418.034 354.1 418.034 275.516 354.101 133 275.517 133zm0 229.6c-48.095 0-87.083-38.988-87.083-87.083s38.989-87.083 87.083-87.083c48.095 0 87.083 38.988 87.083 87.083 0 48.094-38.989 87.083-87.083 87.083z" style="fill:url(#b)" fill=""></path><linearGradient id="c" x1="418.31" x2="418.31" y1="4.57" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:#E09B3D" stop-color="#e09b3d"></stop><stop offset=".3" style="stop-color:#C74C4D" stop-color="#c74c4d"></stop><stop offset=".6" style="stop-color:#C21975" stop-color="#c21975"></stop><stop offset="1" style="stop-color:#7024C4" stop-color="#7024c4"></stop></linearGradient><circle cx="418.31" cy="134.07" r="34.15" style="fill:url(#c)" fill=""></circle></g></svg>
-                                    </a>
-                                </div>
-                                <div class="icon-box">
-                                    <a href="https://www.facebook.com/zetupstore" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M448 0H64C28.704 0 0 28.704 0 64v384c0 35.296 28.704 64 64 64h384c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z" style="" fill="#1976d2" data-original="#1976d2" class=""></path><path d="M432 256h-80v-64c0-17.664 14.336-16 32-16h32V96h-64c-53.024 0-96 42.976-96 96v64h-64v80h64v176h96V336h48l32-80z" style="" fill="#fafafa" data-original="#fafafa" class=""></path></g></svg>
-                                    </a>
-                                </div>
-                            </div>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+              </ul>
             </div>
-        </div>
-        <div class="container">
-            <div class="copyright text-center">
-                © Copyright Reserved by Zetupstore
+          </div>
+          <div class="col-xl-3 col-sm-4 col-12">
+            <div class="footer-heading">
+              <h5 class="font-weight-600">Support & Help</h5>
             </div>
+            <div class="footer-link">
+              <ul>
+                <li>
+                  <a href="faq.html">
+                    <div class="footer-line"></div>
+                    FAQs
+                  </a>
+                </li>
+                <li>
+                  <a href="contact-us.html">
+                    <div class="footer-line"></div>
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a href="terms-condition.html">
+                    <div class="footer-line"></div>
+                    Terms & Conditions
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-4 col-12">
+            <div class="footer-heading">
+              <h5 class="font-weight-600">Social Media</h5>
+            </div>
+            <div class="footer-link">
+              <ul>
+                <li>
+                  <div class="contact-sec">
+                    <div class="contact-icon">
+                      <img src="images/mail.png" alt="telephone" />
+                    </div>
+                    <div class="contact-des">
+                      <a href="mailto:support@zetupstore.com"
+                        >support@zetupstore.com</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="footer-social">
+                    <div class="icon-box">
+                      <a
+                        href="https://www.linkedin.com/company/zetupstore"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 176 176"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <g data-name="Layer 2">
+                              <rect
+                                width="176"
+                                height="176"
+                                fill="#0077b5"
+                                rx="24"
+                                opacity="1"
+                                data-original="#0077b5"
+                                class=""
+                              ></rect>
+                              <g fill="#fff">
+                                <path
+                                  d="M63.4 48a15 15 0 1 1-15-15 15 15 0 0 1 15 15zM60 73v66.27a3.71 3.71 0 0 1-3.71 3.73H40.48a3.71 3.71 0 0 1-3.72-3.72V73a3.72 3.72 0 0 1 3.72-3.72h15.81A3.72 3.72 0 0 1 60 73zM142.64 107.5v32.08a3.41 3.41 0 0 1-3.42 3.42h-17a3.41 3.41 0 0 1-3.42-3.42v-31.09c0-4.64 1.36-20.32-12.13-20.32-10.45 0-12.58 10.73-13 15.55v35.86A3.42 3.42 0 0 1 90.3 143H73.88a3.41 3.41 0 0 1-3.41-3.42V72.71a3.41 3.41 0 0 1 3.41-3.42H90.3a3.42 3.42 0 0 1 3.42 3.42v5.78c3.88-5.82 9.63-10.31 21.9-10.31 27.18 0 27.02 25.38 27.02 39.32z"
+                                  fill="#ffffff"
+                                  opacity="1"
+                                  data-original="#ffffff"
+                                ></path>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="icon-box">
+                      <a
+                        href="https://www.instagram.com/zetup.store"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 551.034 551.034"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <linearGradient
+                              id="a"
+                              x1="275.517"
+                              x2="275.517"
+                              y1="4.57"
+                              y2="549.72"
+                              gradientTransform="matrix(1 0 0 -1 0 554)"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop
+                                offset="0"
+                                style="stop-color: #e09b3d"
+                                stop-color="#e09b3d"
+                              ></stop>
+                              <stop
+                                offset=".3"
+                                style="stop-color: #c74c4d"
+                                stop-color="#c74c4d"
+                              ></stop>
+                              <stop
+                                offset=".6"
+                                style="stop-color: #c21975"
+                                stop-color="#c21975"
+                              ></stop>
+                              <stop
+                                offset="1"
+                                style="stop-color: #7024c4"
+                                stop-color="#7024c4"
+                              ></stop>
+                            </linearGradient>
+                            <path
+                              d="M386.878 0H164.156C73.64 0 0 73.64 0 164.156v222.722c0 90.516 73.64 164.156 164.156 164.156h222.722c90.516 0 164.156-73.64 164.156-164.156V164.156C551.033 73.64 477.393 0 386.878 0zM495.6 386.878c0 60.045-48.677 108.722-108.722 108.722H164.156c-60.045 0-108.722-48.677-108.722-108.722V164.156c0-60.046 48.677-108.722 108.722-108.722h222.722c60.045 0 108.722 48.676 108.722 108.722v222.722z"
+                              style="fill: url(#a)"
+                              fill=""
+                            ></path>
+                            <linearGradient
+                              id="b"
+                              x1="275.517"
+                              x2="275.517"
+                              y1="4.57"
+                              y2="549.72"
+                              gradientTransform="matrix(1 0 0 -1 0 554)"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop
+                                offset="0"
+                                style="stop-color: #e09b3d"
+                                stop-color="#e09b3d"
+                              ></stop>
+                              <stop
+                                offset=".3"
+                                style="stop-color: #c74c4d"
+                                stop-color="#c74c4d"
+                              ></stop>
+                              <stop
+                                offset=".6"
+                                style="stop-color: #c21975"
+                                stop-color="#c21975"
+                              ></stop>
+                              <stop
+                                offset="1"
+                                style="stop-color: #7024c4"
+                                stop-color="#7024c4"
+                              ></stop>
+                            </linearGradient>
+                            <path
+                              d="M275.517 133C196.933 133 133 196.933 133 275.516s63.933 142.517 142.517 142.517S418.034 354.1 418.034 275.516 354.101 133 275.517 133zm0 229.6c-48.095 0-87.083-38.988-87.083-87.083s38.989-87.083 87.083-87.083c48.095 0 87.083 38.988 87.083 87.083 0 48.094-38.989 87.083-87.083 87.083z"
+                              style="fill: url(#b)"
+                              fill=""
+                            ></path>
+                            <linearGradient
+                              id="c"
+                              x1="418.31"
+                              x2="418.31"
+                              y1="4.57"
+                              y2="549.72"
+                              gradientTransform="matrix(1 0 0 -1 0 554)"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop
+                                offset="0"
+                                style="stop-color: #e09b3d"
+                                stop-color="#e09b3d"
+                              ></stop>
+                              <stop
+                                offset=".3"
+                                style="stop-color: #c74c4d"
+                                stop-color="#c74c4d"
+                              ></stop>
+                              <stop
+                                offset=".6"
+                                style="stop-color: #c21975"
+                                stop-color="#c21975"
+                              ></stop>
+                              <stop
+                                offset="1"
+                                style="stop-color: #7024c4"
+                                stop-color="#7024c4"
+                              ></stop>
+                            </linearGradient>
+                            <circle
+                              cx="418.31"
+                              cy="134.07"
+                              r="34.15"
+                              style="fill: url(#c)"
+                              fill=""
+                            ></circle>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="icon-box">
+                      <a
+                        href="https://www.facebook.com/zetupstore"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0"
+                          y="0"
+                          viewBox="0 0 512 512"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                          class=""
+                        >
+                          <g>
+                            <path
+                              d="M448 0H64C28.704 0 0 28.704 0 64v384c0 35.296 28.704 64 64 64h384c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z"
+                              style=""
+                              fill="#1976d2"
+                              data-original="#1976d2"
+                              class=""
+                            ></path>
+                            <path
+                              d="M432 256h-80v-64c0-17.664 14.336-16 32-16h32V96h-64c-53.024 0-96 42.976-96 96v64h-64v80h64v176h96V336h48l32-80z"
+                              style=""
+                              fill="#fafafa"
+                              data-original="#fafafa"
+                              class=""
+                            ></path>
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="copyright text-center">
+          © Copyright Reserved by Zetupstore
+        </div>
+      </div>
     </div>
     <!-- footer End -->
-    <div class="enquiry-form">
-        <div class="enquiry-form-container">
-            <div class="cross-btn">
-                <img src="images/cross.svg" alt="close">
-            </div>
-            <form>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <h4 class="mb-30 font-weight-600">Submit Your
-                            Enquiry</h4>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="text" class="form-control" placeholder="Your Name*" name="name" id="inputName">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="text" class="form-control" placeholder=" Company Name" name="company_name"
-                                id="companyName">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="email" class="form-control" placeholder="Email*" name="email" id="Email">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <input type="text" class="form-control pincode" placeholder="Phone" name="phone" id="phone">
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="mb-30">
-                            <textarea type="number" class="form-control" placeholder="Message" name="message"
-                                id="message"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-xl-12">
-                        <button type="submit" class="btn btn-primary basicbtn">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="btn btn-primary enquiry-btn">
-            <img src="images/cond.png" alt="enquiry">
-        </div>
-    </div>
+    <div id="enquiry-form-section"></div>
     <!-- end -->
     <!-- script -->
     <script src="js/jquery.min.js"></script>
@@ -497,6 +975,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+    <script src="js/form-validations.js"></script>
+    <script src="js/enquiry-form.js"></script>
+  </body>
 </html>
