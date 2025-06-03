@@ -25,14 +25,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (isValid) {
       const success = document.getElementById("contact-us-thank-you-message");
-
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
       try {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Submitting...";
         await submitForm("contact-us");
         success.classList.add("d-block");
         form.classList.add("d-none");
       } catch (err) {
         console.error("contact us failed. ", err);
       } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
         setTimeout(() => {
           success.classList.add("d-none");
           form.classList.remove("d-none");
