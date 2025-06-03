@@ -1,3 +1,9 @@
+import {
+  getAllFormFields,
+  submitForm,
+  validateField,
+} from "./form-validations.js";
+
 //add html form so that we can have same form iin multiple places
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("migration-form-section");
@@ -11,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
                       type="text"
                       class="form-control"
                       placeholder="Your Name"
+                      id="inputName"
+                      name="name"
                       required
                     />
                   </div>
@@ -19,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
                       type="email"
                       class="form-control"
                       placeholder="Your Email"
+                      id="Email"
+                      name="email"
                       required
                     />
                   </div>
@@ -27,13 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
                       type="tel"
                       class="form-control"
                       placeholder="Your Phone"
+                      name="phone" id="phone"
                     />
                   </div>
                   <div class="col-md-6">
                     <input
                       type="text"
                       class="form-control"
-                      placeholder=" Company Name"
+                      placeholder="Company Name"
                       name="company_name"
                       id="companyName"
                     />
@@ -43,14 +54,17 @@ document.addEventListener("DOMContentLoaded", function () {
                       type="text"
                       class="form-control"
                       placeholder="Your Store URL"
-                      
+                      name="store_url"
+                      id="storeUrl"
                     />
                   </div>
                   <div class="col-12">
                     <textarea
                       class="form-control"
                       rows="4"
-                      placeholder="Additional Information"
+                      placeholder="Message"
+                      name="message"
+                      id="message"
                     ></textarea>
                   </div>
                   <div class="col-4">
@@ -60,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   </div>
                 </div>
               </form>
+               <div class="d-none" id="migration-thank-you-message">Thank you</div>
             </div>
   `;
 });
@@ -70,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const inputs = getAllFormFields(form);
 
   // Form submission
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", async function (event) {
     event.preventDefault();
     event.stopPropagation();
 
@@ -84,7 +99,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     if (isValid) {
-      submitForm();
+      const success = document.getElementById("migration-thank-you-message");
+
+      try {
+        await submitForm("migration");
+        success.classList.add("d-block");
+        form.classList.add("d-none");
+      } catch (err) {
+        console.error("Enquiry failed.");
+      } finally {
+        setTimeout(() => {
+          success.classList.add("d-none");
+          form.classList.remove("d-none");
+          form.reset();
+          inputs.forEach((input) => {
+            input.classList.remove("is-valid", "validate-me");
+          });
+        }, 2000);
+      }
     } else {
       form.classList.add("was-validated");
     }

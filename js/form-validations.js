@@ -1,5 +1,6 @@
 // Field validation function
-function validateField(field) {
+export function validateField(field) {
+  console.log("line 3 ----------> ", field);
   if (field.hasAttribute("required") && !field.value.trim()) {
     field.classList.add("is-invalid");
     field.classList.remove("is-valid");
@@ -33,7 +34,7 @@ function validateField(field) {
   return field.checkValidity();
 }
 
-function getAllFormFields(form) {
+export function getAllFormFields(form) {
   // Enable real-time validation on blur
   const inputs = form.querySelectorAll("input, textarea");
   inputs.forEach((input) => {
@@ -54,13 +55,14 @@ function getAllFormFields(form) {
 }
 
 // Form submission function
-async function submitForm(wherefrom) {
+export async function submitForm(wherefrom) {
   const formData = {
     name: document.getElementById("inputName").value,
     company_name: document.getElementById("companyName").value,
     email: document.getElementById("Email").value,
     phone: document.getElementById("phone").value,
     message: document.getElementById("message").value,
+    store_url: document.getElementById("storeUrl").value,
     where_from: wherefrom ?? "enquiry",
   };
 
@@ -73,13 +75,14 @@ async function submitForm(wherefrom) {
       body: JSON.stringify(formData),
     });
 
-    if (!response.ok) throw new Error("Submission failed");
+    console.log("line 77 ------------> ", response);
+    console.log("line 78 ------------> ", response.status);
+
+    if (![200, 201].includes(response.status)) {
+      throw new Error("Submission failed");
+    }
 
     // alert("Thank you! Your enquiry has been submitted.");
-    form.reset();
-    inputs.forEach((input) => {
-      input.classList.remove("is-valid", "validate-me");
-    });
   } catch (error) {
     console.error("Error:", error);
     alert("There was an error submitting your form. Please try again.");

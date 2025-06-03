@@ -1,3 +1,9 @@
+import {
+  getAllFormFields,
+  submitForm,
+  validateField,
+} from "./form-validations.js";
+
 const enquiryFormHtml = `
     <div class="enquiry-form">
         <div class="enquiry-form-container">
@@ -18,7 +24,7 @@ const enquiryFormHtml = `
                     </div>
                     <div class="col-xl-12">
                         <div class="mb-30">
-                            <input type="text" class="form-control" placeholder=" Company Name" name="company_name"
+                            <input type="text" class="form-control" placeholder="Company Name" name="company_name"
                                 id="companyName">
                         </div>
                     </div>
@@ -78,9 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
         isValid = false;
       }
     });
-
     if (isValid) {
       const success = document.getElementById("thank-you-message");
+
       try {
         await submitForm("enquiry");
         success.classList.add("d-block");
@@ -91,7 +97,11 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
           success.classList.add("d-none");
           form.classList.remove("d-none");
-        }, 200);
+          form.reset();
+          inputs.forEach((input) => {
+            input.classList.remove("is-valid", "validate-me");
+          });
+        }, 2000);
       }
     } else {
       form.classList.add("was-validated");
