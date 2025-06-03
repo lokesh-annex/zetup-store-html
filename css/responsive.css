@@ -2,7 +2,7 @@
     .pad-90{
         padding: 3rem 0rem;
     }
-    h2 {
+    h1, h2 {
         font-size: 36px;
         line-height: 54px;
     }
@@ -187,7 +187,7 @@
     .pad-90{
         padding: 3rem 0rem;
     }
-    h2 {
+    h1, h2 {
         font-size: 36px;
         line-height: 54px;
     }
@@ -362,7 +362,7 @@ min-height: 425px;
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
-    h2 {
+    h1, h2 {
         font-size: 26px;
         line-height: 36px;
     }      
@@ -628,7 +628,7 @@ min-height: 425px;
         line-height: 44px;
     }
 
-    h2 {
+    h1, h2 {
         font-size: 27px;
         line-height: 32px;
     }
@@ -1026,7 +1026,7 @@ padding-left: 0px;
 
     /* New Css */
 
-    h2 {
+    h1, h2 {
         font-size: 22px;
         line-height: 32px;
     }   
@@ -1382,7 +1382,10 @@ section.features-list-inner.pad-90.pt-0 {
 } */
 
 
+.contactinfo-item .icon-box svg{
+        -webkit-filter: grayscale(0);
 
+}
 
 
 
