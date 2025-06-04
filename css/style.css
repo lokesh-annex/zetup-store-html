@@ -3218,16 +3218,16 @@ section.live-demo.pad-90 {
   position: relative;
 }
 .recommended-badge {
-  background: #eaffd7;
-  color: #4caf50;
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 2px 22px;
-  border-radius: 6px;
-  position: absolute;
-  top: 12px;
-  left: 50%;
-  transform: translateX(-50%);
+ background: #eaffd7;
+    color: #4caf50;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 22px;
+    border-radius: 6px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .plan-title {
   font-size: 1.08rem;
