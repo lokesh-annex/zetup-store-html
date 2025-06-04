@@ -58,14 +58,17 @@ function getAllFormFields(form) {
 }
 
 // Form submission function
-async function submitForm(wherefrom) {
+async function submitForm(wherefrom, formId) {
+  const form = document.getElementById(formId);
+  console.log("line 63 ---------------> ", form)
+  console.log("line 64 ---------------> ", form.querySelector("inputName"))
   const formData = {
-    name: document.getElementById("inputName").value,
-    company_name: document.getElementById("companyName")?.value,
-    email: document.getElementById("Email").value,
-    phone: document.getElementById("phone").value,
-    message: document.getElementById("message")?.value,
-    store_url: document.getElementById("storeUrl")?.value,
+    name: form.querySelector("#inputName").value,
+    company_name: form.querySelector("#companyName")?.value,
+    email: form.querySelector("#Email").value,
+    phone: form.querySelector("#phone").value,
+    message: form.querySelector("#message")?.value,
+    store_url: form.querySelector("#storeUrl")?.value,
     where_from: wherefrom ?? "enquiry",
   };
 

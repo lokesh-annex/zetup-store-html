@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
       try {
         submitBtn.disabled = true;
         submitBtn.innerHTML = "Submitting...";
-           await submitForm("migration");
+        await submitForm("migration", "migrationForm");
         success.classList.remove("d-none");
         success.classList.add("d-block");
         form.classList.add("d-none");
