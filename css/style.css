@@ -141,6 +141,9 @@ h3 span {
 .secondary-color {
   color: var(--secondary-color);
 }
+.text-right{
+  text-align: right !important;
+}
 .linear-gradient-1 {
   background: linear-gradient(to right, #05255c 0%, #103c87 100%) !important;
   position: relative;
@@ -1780,6 +1783,15 @@ video.fullscreen::-webkit-media-controls {
   background-attachment: fixed;
   position: relative;
 }
+.price_bottom_sec{
+    padding: 20px 35px;
+    background: #fefdf2;
+    border-radius: 10px;
+    margin-top: 4rem;
+}
+.price_bottom_sec h3{
+      margin-bottom: 1.5rem;
+}
 .choose-btn{
     padding: 15px 12px;
 }
@@ -1822,6 +1834,9 @@ video.fullscreen::-webkit-media-controls {
   flex-direction: column;
   overflow: hidden;
   background-color: #ffedd5;
+}
+.why-transition-section .mb-4{
+    margin-bottom: 0%!important;
 }
 .drives-growth-stage-wrap {
   border: 1px solid #1d202626;
