@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("contact-us failed.");
       } finally {
          form.reset();
+          form.classList.remove("was-validated");
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnText;
         setTimeout(() => {

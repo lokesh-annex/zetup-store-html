@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("migration failed.");
       } finally {
          form.reset();
+          form.classList.remove("was-validated");
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnText;
         setTimeout(() => {
