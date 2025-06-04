@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
         submitBtn.disabled = true;
         submitBtn.innerHTML = "Submitting...";
 
-        await submitForm("enquiry");
+        await submitForm("enquiry", "enquiryForm");
         success.classList.remove("d-none");
         success.classList.add("d-block");
         form.classList.add("d-none");
