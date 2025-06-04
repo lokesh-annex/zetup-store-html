@@ -103,16 +103,16 @@ document.addEventListener("DOMContentLoaded", function () {
       } catch (err) {
         console.error("Enquiry failed.");
       } finally {
-         form.reset();
+        form.reset();
+        inputs.forEach((input) => {
+            input.classList.remove("is-valid", "validate-me");
+          });
+          form.classList.remove("was-validated");
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnText;
         setTimeout(() => {
           success.classList.add("d-none");
-          form.classList.remove("d-none");
-         
-          inputs.forEach((input) => {
-            input.classList.remove("is-valid", "validate-me");
-          });
+          form.classList.remove("d-none"); 
         }, 2000);
       }
     } else {
