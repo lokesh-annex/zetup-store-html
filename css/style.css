@@ -4765,6 +4765,28 @@ section.live-demo.pad-90 {
   animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
 }
 
+
+.gradient-text {
+  font-weight: bold;
+  font-size: 24px;
+  background: linear-gradient(-45deg, #0b5563, #0b5563, #7d190c, #db8c05);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .thank-you-title {
   color: #333;
   margin: 1rem 0 0.5rem;
