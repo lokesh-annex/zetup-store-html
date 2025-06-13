@@ -1296,6 +1296,14 @@ section.features-list-inner.pad-90.pt-0 {
 }
 
 
+.heading-sec-container h5, .heading-sec-container h4{
+        font-size: 16px;
+    margin-top: 15px;
+}
+
+.heading-sec-container .gradient-text{
+    font-size: 20px;
+}
 /* Get Started Free - Upgrade Anytime */
 .section_cta .heading-style-h2 {
     font-size: 26px;
